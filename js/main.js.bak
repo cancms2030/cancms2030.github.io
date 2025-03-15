@@ -1,0 +1,54 @@
+// 案例筛选功能
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // 移除所有按钮的 active 类
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // 添加当前按钮的 active 类
+            this.classList.add('active');
+
+            const filterValue = this.getAttribute('data-filter');
+
+            portfolioItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
+// 移动端导航菜单
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+});
+
+// 轮播图初始化
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}); 

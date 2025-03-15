@@ -1,4 +1,5 @@
-# CANCMS Hugo 主题
+# CANCMS Hugo 主题 
+ok
 
 这是一个基于 Hugo 的现代化企业网站主题，专为网站建设公司设计。
 

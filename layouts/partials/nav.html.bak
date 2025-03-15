@@ -1,0 +1,33 @@
+<!-- 导航栏 -->
+<nav class="navbar">
+    <div class="container">
+        <a href="{{ .Site.BaseURL }}" class="logo">
+            <img src="{{ "images/logo/logo.png" | relURL }}" alt="{{ .Site.Title }}" class="logo-img">
+        </a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                    <li class="dropdown">
+                        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+                            {{ .Name }}
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            {{ range .Children }}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ else }}
+                    <li><a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a></li>
+                {{ end }}
+            {{ end }}
+            <li><a href="/contact/" class="cta-button">联系我们</a></li>
+        </ul>
+    </div>
+</nav> 

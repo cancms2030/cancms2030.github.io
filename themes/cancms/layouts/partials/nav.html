@@ -1,0 +1,143 @@
+<!-- 导航栏 -->
+<nav class="navbar">
+    <div class="container">
+        <a href="{{ .Site.BaseURL }}" class="logo">
+            <img src="{{ "images/logo/logo.png" | relURL }}" alt="{{ .Site.Title }}" class="logo-img">
+        </a>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                    <li class="dropdown">
+                        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+                            {{ .Name }}
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            {{ range .Children }}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ else }}
+                    <li><a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a></li>
+                {{ end }}
+            {{ end }}
+            <li><a href="{{ "/contact/" | relURL }}" class="nav-cta-button white-text">联系我们</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    // 汉堡菜单点击事件
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // 下拉菜单点击事件
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                this.classList.toggle('active');
+            }
+        });
+    });
+
+    // 点击页面其他地方关闭菜单
+    document.addEventListener('click', function(e) {
+        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+
+    // 窗口调整大小时重置菜单状态
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+        }
+    });
+});
+</script>
+
+<style>
+/* 汉堡菜单样式 */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* 汉堡菜单激活状态 */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* 移动端响应式样式 */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* 调整为你的导航栏高度 */
+        left: 0;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+}
+</style> 

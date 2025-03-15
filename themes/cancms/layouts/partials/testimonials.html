@@ -1,0 +1,218 @@
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title">客户评价</h2>
+        <div class="testimonials-grid">
+            <!-- 评价卡片 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "按照我的要求来设置个人主页，很OK。"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{{ "images/testimonials/client1.jpg" | relURL }}" alt="客户头像" class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">Sophia</h4>
+                        <p class="author-title">留学生</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 评价卡片 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "太厉害辣！果然专业的事还得的是专业来。"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{{ "images/testimonials/client2.jpg" | relURL }}" alt="客户头像" class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">刘女士</h4>
+                        <p class="author-title">设计师</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 评价卡片 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "服务质量超出预期，团队响应速度快，技术实力强，非常专业非常nice。👍🏻"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{{ "images/testimonials/client3.jpg" | relURL }}" alt="客户头像" class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">郭女士</h4>
+                        <p class="author-title">研究员</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新增评价卡片 4 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "他们技术很好，很认真负责地帮我解决了问题。有需要的小伙伴一定来这里，不亏的。 "
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{{ "images/testimonials/client4.jpg" | relURL }}" alt="客户头像" class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">黄同学</h4>
+                        <p class="author-title">研究生</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新增评价卡片 5 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "非常有耐心的解决了问题，好评！。"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{{ "images/testimonials/client5.jpg" | relURL }}" alt="客户头像" class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">张女士</h4>
+                        <p class="author-title">研究员</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新增评价卡片 6 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "技术一流，解决实际问题。为开源精神点赞。"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{{ "images/testimonials/client6.jpg" | relURL }}" alt="客户头像" class="author-image">
+                    <div class="author-info">
+                        <h4 class="author-name">颜先生</h4>
+                        <p class="author-title">学科带头人</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.quote-icon {
+    color: #6366f1;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-name {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.author-title {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .testimonials-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+</style> 

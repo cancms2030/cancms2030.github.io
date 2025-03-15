@@ -1,0 +1,63 @@
+<!-- 页脚 -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于 {{ .Site.Title }}</h3>
+                <p>{{ .Site.Params.description }}</p>
+                <div class="social-links">
+                    <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+                    <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
+                    <a href="#" title="QQ"><i class="fab fa-qq"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                        {{ if not .HasChildren }}
+                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>服务项目</h3>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                        {{ if eq .Identifier "services" }}
+                            {{ range .Children }}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>案例展示</h3>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                        {{ if eq .Identifier "portfolio" }}
+                            {{ range .Children }}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> {{ .Site.Params.address }}</li>
+                    <li><i class="fas fa-phone"></i> {{ .Site.Params.phone }}</li>
+                    <li><i class="fas fa-envelope"></i> {{ .Site.Params.email }}</li>
+                    <li><i class="fas fa-clock"></i> 周一至周五 9:00-18:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.company }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer> 

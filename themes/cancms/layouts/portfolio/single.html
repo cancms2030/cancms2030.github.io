@@ -1,0 +1,122 @@
+{{ define "main" }}
+{{ partial "portfolio-modal.html" . }}
+<div class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+    </div>
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>精选案例</h2>
+            <p>展示我们的优秀项目案例</p>
+        </div>
+        <div class="portfolio-filter">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站开发</button>
+                <button class="filter-btn" data-filter="mobile">移动应用</button>
+                <button class="filter-btn" data-filter="ui">UI设计</button>
+            </div>
+        </div>
+        <div class="portfolio-items">
+            <div class="portfolio-item card" data-category="web">
+                <div class="portfolio-image">
+                    <img src="{{ "images/portfolio/project1.jpg" | relURL }}" alt="项目案例">
+                    <div class="portfolio-overlay">
+                        <h3>企业官网建设</h3>
+                        <p>响应式企业官网设计与开发</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/601" alt="电商网站">
+                    <div class="portfolio-overlay">
+                        <h3>电商网站开发</h3>
+                        <p>专业的电商平台解决方案</p>
+                        <a href="#" class="view-project"  onclick="openPortfolioModal('project1')">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/602" alt="管理系统">
+                    <div class="portfolio-overlay">
+                        <h3>管理系统开发</h3>
+                        <p>企业级管理系统解决方案</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 移动应用案例 -->
+            <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/603" alt="iOS应用">
+                    <div class="portfolio-overlay">
+                        <h3>iOS应用开发</h3>
+                        <p>专业的iOS应用开发服务</p>
+                        <a href="#" class="view-project" >查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/604" alt="Android应用">
+                    <div class="portfolio-overlay">
+                        <h3>Android应用开发</h3>
+                        <p>专业的Android应用开发服务</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/605" alt="混合应用">
+                    <div class="portfolio-overlay">
+                        <h3>混合应用开发</h3>
+                        <p>跨平台应用开发解决方案</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI设计案例 -->
+            <div class="portfolio-item" data-category="ui">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/606" alt="网站UI设计">
+                    <div class="portfolio-overlay">
+                        <h3>网站UI设计</h3>
+                        <p>现代化的网站界面设计</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ui">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/607" alt="应用UI设计">
+                    <div class="portfolio-overlay">
+                        <h3>应用UI设计</h3>
+                        <p>移动应用界面设计</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="ui">
+                <div class="portfolio-image">
+                    <img src="https://picsum.photos/800/608" alt="品牌设计">
+                    <div class="portfolio-overlay">
+                        <h3>品牌设计</h3>
+                        <p>企业品牌视觉设计</p>
+                        <a href="#" class="view-project">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }} 

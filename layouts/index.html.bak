@@ -1,0 +1,101 @@
+{{ define "main" }}
+<!-- 轮播图 -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <!-- 第一张幻灯片：网站建设服务 -->
+        <div class="swiper-slide">
+            <img src="{{ "images/slides/slide1.jpg" | relURL }}" alt="网站建设服务">
+            <div class="slide-content">
+                <h1>专业的网站建设服务</h1>
+                <p>为您打造现代化、响应式的企业网站</p>
+                <a href="/contact/" class="cta-button">立即咨询</a>
+            </div>
+        </div>
+        
+        <!-- 第二张幻灯片：移动应用开发 -->
+        <div class="swiper-slide">
+            <img src="{{ "images/slides/slide2.jpg" | relURL }}" alt="移动应用开发">
+            <div class="slide-content">
+                <h1>移动应用开发</h1>
+                <p>专业的移动应用开发团队，助力您的业务数字化转型</p>
+                <a href="/contact/" class="cta-button">了解更多</a>
+            </div>
+        </div>
+        
+        <!-- 第三张幻灯片：UI设计服务 -->
+        <div class="swiper-slide">
+            <img src="{{ "images/slides/slide3.jpg" | relURL }}" alt="UI设计服务">
+            <div class="slide-content">
+                <h1>UI设计服务</h1>
+                <p>创新的设计理念，为您打造极致用户体验</p>
+                <a href="/contact/" class="cta-button">获取方案</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!-- 服务特色 -->
+<section class="features">
+    <div class="container">
+        <h2>我们的服务特色</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>专业开发</h3>
+                <p>采用最新的技术栈，确保网站性能和安全</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>响应式设计</h3>
+                <p>完美适配各种设备，提供最佳用户体验</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>创意设计</h3>
+                <p>独特的设计风格，突出品牌特色</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>技术支持</h3>
+                <p>7*24小时技术支持，解决您的后顾之忧</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 为什么选择我们 -->
+<section class="why-us">
+    <div class="container">
+        <h2>为什么选择我们</h2>
+        <div class="why-us-grid">
+            <div class="why-us-item">
+                <div class="number">10+</div>
+                <h3>年行业经验</h3>
+                <p>深耕网站建设行业多年，经验丰富</p>
+            </div>
+            <div class="why-us-item">
+                <div class="number">500+</div>
+                <h3>成功案例</h3>
+                <p>服务过众多知名企业，口碑良好</p>
+            </div>
+            <div class="why-us-item">
+                <div class="number">50+</div>
+                <h3>专业团队</h3>
+                <p>拥有经验丰富的开发设计团队</p>
+            </div>
+            <div class="why-us-item">
+                <div class="number">100%</div>
+                <h3>客户满意度</h3>
+                <p>始终以客户需求为中心，追求卓越</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }} 

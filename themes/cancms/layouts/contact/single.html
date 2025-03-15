@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="article-section">
+        <h2>联系方式</h2>
+        <div class="content-with-image">
+            <div class="text-content">
+                <p>欢迎通过以下方式联系我们：</p>
+                <ul>
+                    <li><i class="fas fa-shopping-cart"></i> 淘宝店：<a href="{{ .Site.Params.taobao_shop }}" class="text-link"  >{{ .Site.Params.taobao_shop }}</a></li>
+                    <li><i class="fa-solid fa-comment-dots"></i> 微信：<span class="text-link">{{ .Site.Params.weixin }}</span></li>
+                    <li><i class="fas fa-envelope"></i> 邮箱：<a href="mailto:{{ .Site.Params.email }}" class="text-link" >{{ .Site.Params.email }}</a></li>
+                    <li><i class="fas fa-clock"></i> 工作时间：周一至周五 9:00-18:00</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="{{ "images/about/office.jpg" | relURL }}" alt="办公环境">
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+{{ end }} 

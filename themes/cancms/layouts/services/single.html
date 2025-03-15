@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="article-section">
+        <h2 id="web">网站开发服务</h2>
+        <div class="content-with-image">
+            <div class="text-content">
+                <p>我们提供专业的网站设计与开发服务，业务范围包括：</p>
+                 
+                <ul>
+                    <li><strong>个人网站：</strong>展示个人品牌、作品集或博客，突出个性与专业性。</li>
+                    <li><strong>学术网站：</strong>为学者、研究团队或学术机构提供内容管理、数据展示及资源共享平台。</li>
+                    <li><strong>组织团体网站：</strong>为非营利组织、协会或社群打造信息展示平台，增强影响力。</li>
+                    <li><strong>企业官网：</strong>为企业提供品牌展示，产品、服务展示的网站平台，增强品牌形象，提高信任度。</li>
+                    <li><strong>网站维护: </strong>内容更新, bug修复, 服务器维护。</li>
+                </ul>
+                                </ul>
+                
+                <p>采用最新的技术和框架，确保网站性能优异，用户体验出色。</p>
+            </div>
+            <div class="image-content">
+                <img src="{{ "images/services/web-dev.jpg" | relURL }}" alt="网站开发">
+            </div>
+        </div>
+
+        <h2 id="mobile">服务器环境安装配置服务</h2>
+        <div class="content-with-image image-right">
+            <div class="text-content">
+                <p>专业的服务器构建服务，内容包括：</p>
+                <ul>
+                    <li>域名注册</li>
+                    <li>服务器租用</li>
+                    <li>服务器软件安装</li>
+                    <li>数据库数据维护</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="{{ "images/services/linux-dev.jpg" | relURL }}" alt="服务器环境安装">
+            </div>
+        </div>
+
+        <h2 id="ui">后台管理系统定制开发服务</h2>
+        <div class="content-with-image">
+            <div class="text-content">
+                <p>提供专业的系统定制服务，包括：</p>
+                <ul>
+                    <li>中医体质辨识系统定制开发</li>
+                    <li>预约系统定制开发</li>
+                    <li>人工智能领域视频数据标注系统定制开发</li>
+                    <li>其它的系统可约谈</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="{{ "images/services/admin-system.jpg" | relURL }}" alt="系统定制开发">
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }} 

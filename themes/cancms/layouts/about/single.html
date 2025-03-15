@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="article-section">
+        <h2 id="team">工作室简介</h2>
+        <div class="content-with-image">
+            <div class="text-content">
+                <p>Cancms网站建设工作室专注于为<strong>个人、学术机构、组织团体及企业</strong>提供专业、定制化的网站建设服务。我们致力于打造简洁、高效且功能强大的网站，帮助客户在数字化时代展现独特价值。</p>
+                <p>核心竞争力：</p>
+                <ul>
+                    <li><strong>定制化设计：</strong>根据客户需求量身定制，确保网站风格与目标一致。</li>
+                    <li><strong>技术领先：</strong>采用先进开发技术，确保网站性能稳定、安全可靠。</li>
+                    <li><strong>用户体验优化：</strong>注重界面设计与交互体验，提升用户访问满意度。</li>
+                    <li><strong>高效交付：</strong>流程化项目管理，快速响应，按时交付。</li>
+                    <li><strong>持续支持：</strong>提供长期维护与更新服务，确保网站始终高效运行。</li>
+                </ul>
+                <p>    我们以 <strong>让网站建设更简单</strong> 为使命，用专业技术和贴心服务帮助客户实现数字化目标。选择我们，就是选择高效与信赖！</p>
+            </div>
+            <div class="image-content">
+                <img src="{{ "images/about/competence.jpg" | relURL }}" alt="公司简介">
+            </div>
+        </div>
+
+
+        <h2 id="team">团队介绍</h2>
+        <div class="content-with-image  image-right">
+            <div class="text-content">
+                <p>我们的团队由经验丰富的专业人士组成，包括：</p>
+                <ul>
+                    <li><strong>技术开发团队：</strong> 精通各类网站开发技术，确保项目高质量完成</li>
+                    <li><strong>设计团队：</strong> 具有创新设计理念，注重用户体验</li>
+                    <li><strong>项目管理团队：</strong> 专业的项目流程管理，确保项目按时交付</li>
+                    <li><strong>客户服务团队：</strong> 提供及时的技术支持和售后服务</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="{{ "images/about/team.jpg" | relURL }}" alt="团队介绍">
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }} 

@@ -1,0 +1,129 @@
+{{ define "main" }}
+<!-- 轮播图 -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <!-- 第一张幻灯片：网站建设服务 -->
+        <div class="swiper-slide">
+            <img src="{{ "images/slides/slide1.jpg" | relURL }}" alt="网站建设服务">
+            <div class="slide-content">
+                <h2>网站内容不多 - <span class="highlight-text">简单做</span></h2>
+                <p>全站静态html文件输出，Github无缝衔接，节省服务器资源、速度快</p>
+                <a href="/contact/" class="cta-button">立即咨询</a>
+            </div>
+        </div>
+        
+        <!-- 第二张幻灯片：移动应用开发 -->
+        <div class="swiper-slide">
+            <img src="{{ "images/slides/slide2.jpg" | relURL }}" alt="移动应用开发">
+            <div class="slide-content">
+                <h2>建站技术 - <span class="highlight-text">简单易懂</span></h2>
+                <p>Html，json, markdown 文件编辑, 对非技术人员友好，后期更新容易</p>
+                <a href="/contact/" class="cta-button">了解更多</a>
+            </div>
+        </div>
+        
+        <!-- 第三张幻灯片：UI设计服务 -->
+        <div class="swiper-slide">
+            <img src="{{ "images/slides/slide3.jpg" | relURL }}" alt="UI设计服务">
+            <div class="slide-content">
+                <h2>网站设计现代化，<span class="highlight-text">响应式</span></h2>
+                <p>运用高质量的视觉设计，注重用户体验，电脑端手机端同时适应</p>
+                <a href="/contact/" class="cta-button">获取方案</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!-- 新增 Slogan 区域 -->
+<section class="slogan-section">
+    <div class="container">
+        <div class="slogan-content">
+            <h2 class="slogan-main">专注于<span style="color: var(--secondary-color);">中小型</span>网站建设服务</h2>
+            <div class="slogan-divider">
+                <span></span>
+                <i class="fas fa-star"></i>
+                <span></span>
+            </div>
+            <p class="slogan-sub">打造现代化响应式的<span style="color: var(--secondary-color);">个人/企业</span>网站，展示积极的主体形象</p>
+        </div>
+    </div>
+</section>
+
+<!-- 服务特色 -->
+<section class="features">
+    <div class="container">
+        <h2>我们的服务特色</h2>
+        <div class="features-grid home-service-wrapper">
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>专业开发</h3>
+                <p>采用最新的技术栈，确保网站性能和安全</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>响应式设计</h3>
+                <p>完美适配各种设备，提供最佳用户体验</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>简单快捷</h3>
+                <p>快速搭建框架，开发网站，部署上线</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>技术支持</h3>
+                <p>提供技术支持，对非技术人员友好，解决后顾之忧</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 为什么选择我们 -->
+<section class="why-us">
+    <div class="container">
+        <h2>为什么选择我们</h2>
+        <div class="why-us-grid">
+            <div class="why-us-item">
+                <div class="number">10年+</div>
+                <h3>行业经验</h3>
+                <p>深耕网站建设行业多年，经验丰富</p>
+            </div>
+       
+
+            <div class="why-us-item">
+                <div class="number">50+</div>
+                <h3>成功案例</h3>
+                <p>服务过众多个人和团体机构，口碑良好</p>
+                <div style="padding-top: 30px;"><a href="{{ "/portfolio/" | relURL }}" class="nav-cta-button">案例展示</a></div>
+            </div>
+           
+            
+            <div class="why-us-item">
+                <div class="number">100%</div>
+                <h3>客户满意度</h3>
+                <p>始终以客户需求为中心，追求卓越</p>
+            </div>
+
+            
+            <div class="why-us-item">
+                <div class="number">100%</div>
+                <h3>安全与合规</h3>
+                <p>确保网站安全性防止数据泄露，符合相关法律法规</p>
+            </div>
+
+            
+        </div>
+      
+    </div>
+</section>
+
+<!-- 在适当的位置添加 testimonials 模块 -->
+{{ partial "testimonials.html" . }}
+{{ end }} 

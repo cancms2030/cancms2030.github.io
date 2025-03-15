@@ -1,0 +1,256 @@
+#  'project1': {
+#             title: '企业官网设计与开发',
+#             client: '某科技公司',
+#             category: '网站开发',
+#             date: '2023年12月',
+#             description: '为客户打造现代化的企业官网，展示公司产品和服务，提升品牌形象。',
+#             features: [
+#                 '响应式设计，完美适配各种设备',
+#                 '优化的用户体验和界面设计',
+#                 '集成内容管理系统',
+#                 'SEO优化方案实施'
+#             ],
+#             images: [
+#                 '/images/portfolio/project1-1.jpg',
+#                 '/images/portfolio/project1-2.jpg',
+#                 '/images/portfolio/project1-3.jpg'
+#             ]
+#         }
+
+
+- title: 经济管理类个人展示网站
+  id: project1
+  description: 经济管理类个人展示网站， 展示个人成果， 包括个人介绍、 个人成果、 个人联系方式等。
+  images: 
+    - /images/portfolio/project1.jpg
+  category: web
+  date: 2024-09-05
+  client: 研究生个人
+  features:
+    - 响应式设计
+    - 优秀的用户体验
+    - 全方位展示个人成果
+
+
+- title: 个人研究项目展示网站
+  id: project2
+  description: 个人研究项目展示, 包括个人研究项目介绍、 个人研究项目成果、 个人研究项目联系方式等。
+  images: 
+    - /images/portfolio/project2.jpg
+  category: web
+  date: 2024-11-21
+  client: 博士研究生
+  features:
+    - 响应式设计
+    - 网站更新简单容易
+    - 全方位展示个人成果
+
+
+
+- title: 个人学术成果展示网站
+  id: project3
+  description: 个人学术成果展示, 包括个人学术成果介绍、 个人学术成果成果、 个人学术成果联系方式等。
+  images: 
+    - /images/portfolio/project3.jpg
+  category: web
+  date: 2024-07-12
+  client: 牛津大学学生
+  features:
+    - 响应式设计
+    - 网站更新简单容易
+    - 全方位展示个人成果
+
+
+
+- title: 企业产品展示网站
+  id: project4
+  description: 企业产品展示网站， 展示企业产品， 包括企业产品介绍、 企业产品成果、 企业产品联系方式等。
+  images: 
+    - /images/portfolio/project4.jpg
+  category: web
+  date: 2024-12-15
+  client: 四川某企业
+  features:
+    - 响应式设计
+    - 全方位展示产品信息
+    - 配合AI创作
+
+
+
+
+- title: 设计师成果展示网站
+  id: project5
+  description: 设计师成果展示网站, 展示设计师成果， 包括设计师成果介绍、 3D方式展示作品
+  images: 
+    - /images/portfolio/project5.jpg
+  category: web
+  date: 2025-03-01
+  client: 留学生
+  features:
+    - 响应式设计
+    - 3D动态展示
+    - 全方位展示个人成果
+
+
+
+
+
+- title: 课题组网站建设
+  id: project6
+  description: 课题组网站建设， 展示课题组成果， 包括课题组介绍、 课题组联系方式等。
+  images: 
+    - /images/portfolio/project6.jpg
+  category: web
+  date: 2024-11-13
+  client: 大学课题组
+  features:
+    - 响应式设计
+    - 视频展示
+    - 课题组成员介绍
+
+
+
+- title: 课题组网站建设
+  id: project7
+  description: 课题组网站建设， 展示课题组成果， 包括课题组介绍、 课题组联系方式等。
+  images: 
+    - /images/portfolio/project7.jpg
+  category: web
+  date: 2024-12-23
+  client: 大学课题组
+  features:
+    - 响应式设计
+    - 视频展示
+    - 课题组成员介绍
+
+
+- title: 组织机构网站建设
+  id: project8
+  description: 城市宣传组织机构网站建设， 展示城市宣传组织成果， 包括组织介绍、 组织活动、人员情况等。
+  images: 
+    - /images/portfolio/project8.jpg
+  category: web
+  date: 2025-03-06
+  client: 北京某组织
+  features:
+    - 响应式设计
+    - 数据量大
+    - 图片多
+
+
+
+
+
+- title: 课题组网站建设
+  id: project9
+  description: 课题组网站建设， 展示课题组成果， 包括课题组介绍、 课题组联系方式等。
+  images: 
+    - /images/portfolio/project9.jpg
+  category: web
+  date: 2024-12-05
+  client: 深圳某大学课题组
+  features:
+    - 响应式设计
+    - 视频展示
+    - 课题组成员介绍
+
+
+
+
+- title: 学术网站建设
+  id: project10
+  description: 学术论文网站建设， 展示学术论文， 包括学术论文介绍、 学术论文成果、 学术论文相关实例演示等。
+  images: 
+    - /images/portfolio/project10.jpg
+  category: web
+  date: 2024-10-22
+  client: 天津某大学
+  features:
+    - 响应式设计
+    - 论文混合图文声音多媒体展示
+    - 按照论文样式展示
+
+
+- title: 教授项目展示网站建设
+  id: project11
+  description: 教授项目展示, 包括项目介绍、 项目成果、 教授自身的介绍等。
+  images: 
+    - /images/portfolio/project11.jpg
+  category: web
+  date: 2024-08-09
+  client: 留学生
+  features:
+    - 响应式设计
+    - 论文条目展示
+    - 全方位展示个人成果
+
+
+
+- title: 学术书籍写作
+  id: project12
+  description: 用电子书的形式展示个人学术经验，电子书用markdown格式来写.
+  images: 
+    - /images/portfolio/project12.jpg
+  category: web
+  date: 2024-09-01
+  client: 研究生
+  features:
+    - 响应式设计
+    - 类似书本的章节目录展示
+    - 支持Latex公式
+
+
+
+- title: 视频数据标注系统
+  id: project13
+  description: 后台管理系统，用来标注视频数据，多用户登录， 支持多用户协作， 支持多种视频格式， 支持多种标注方式， 支持多种导出方式。
+  images: 
+    - /images/portfolio/project13.jpg
+  category: web
+  date: 2024-07-15
+  client: 清华大学学生
+  features:
+    - 响应式设计
+    - 多用户登录
+    - 支持多用户协作
+    - 支持多种视频格式
+    - 视频加入标注播放
+    - 数据导出导入
+
+
+
+- title: 中医体质系统
+  id: project14
+  description: 中医体质问卷系统，九个大类的体质，推断出用户的体质类型， 并给出相应的建议。
+  images: 
+    - /images/portfolio/project14.jpg
+  category: admin
+  date: 2024-03-06
+  client: 山东某公司
+  features:
+    - 响应式设计
+    - 33个问题
+    - 能出体质报告
+    - 能打印报告结果
+    - 有饮食调理建议
+
+
+
+- title: Gitlab 管理平台私有化部署
+  id: project15
+  description: Ubuntu 服务器上部署Gitlab 管理平台， 私有化部署， 并进行管理。
+  images: 
+    - /images/portfolio/project15.jpg
+  category: web
+  date: 2024-06-16
+  client: 上海某公司
+  features:
+    - ubuntu 或者 centos 服务器上面安装
+    - gitlab相关配置
+    - gitlab 502报错问题解决
+    - 域名绑定
+
+
+
+
+

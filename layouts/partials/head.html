@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+   
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ with .Site.Params.keywords }}{{ . }}{{ end }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/vendor/fontawesome.min.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/vendor/swiper-bundle.min.css" | relURL }}">
+   
+    
+    <!-- JavaScript -->    
+    <script src="{{ "js/vendor/fontawesome.min.js" | relURL }}" defer></script>
+    <script src="{{ "js/vendor/swiper-bundle.min.js" | relURL }}" defer></script>
+    <script src="{{ "js/main.js" | relURL }}" defer></script>
+
+    
+
+</head>
+</rewritten_file> 

@@ -1,0 +1,29 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于 {{ .Site.Title }}</h3>
+                <p>{{ .Site.Params.description }}</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <ul>
+                    <li><i class="fas fa-shopping-cart"></i> 淘宝店：<a href="{{ .Site.Params.taobao_shop }}" class="text-link" >{{ .Site.Params.taobao_shop }}</a></li>
+                    <li><i class="fa-solid fa-comment-dots"></i> 微信：<span class="text-link"></span>{{ .Site.Params.weixin }}</span></li>
+                    <li><i class="fas fa-envelope"></i> 邮箱：<a href="mailto:{{ .Site.Params.email }}" class="text-link" >{{ .Site.Params.email }}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>{{ .Site.Params.copyright }}</p>
+        </div>
+    </div>
+</footer> 

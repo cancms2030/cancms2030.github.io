@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ partial "portfolio-modal.html" . }}
+
+{{ $data := .Site.Data.portfolio }}
+
+<div class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+    </div>
+</div>
+
+<section class="content-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>精选案例</h2>
+            <p>展示我们的优秀项目案例</p>
+        </div>
+        
+        <div class="portfolio-items">
+            {{ range $data }}
+            <div class="portfolio-item card" data-category="{{ .category }}">
+                <div class="portfolio-image">
+                    <img src="{{ index .images 0 }}" alt="{{ .title }}">
+                    <div class="portfolio-overlay">
+                        <h3>{{ .title }}</h3>
+                        <p>{{ .description }}</p>
+                        <a href="#" class="view-project" onclick="openPortfolioModal('{{ .id }}')">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+          
+ 
+        </div>
+    </div>
+</section>
+{{ end }} 

@@ -47,6 +47,7 @@ jobs:
         with:
             SSH_PRIVATE_KEY: ${{ secrets.REMOTE_SSH_KEY }}
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+            REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
             REMOTE_USER: "tpx2030_github"
             TARGET: "/data/wwwroot/74.82.196.29/cancms.com"
             # ARGS: "-avzr --delete" # 这个会引起  rsync  failed to set times  问题

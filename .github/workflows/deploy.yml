@@ -40,7 +40,19 @@ jobs:
         run: |
           echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-      
+          
+
+      - name: Deploy To My Remote Server
+        uses: easingthemes/ssh-deploy@main
+        with:
+            SSH_PRIVATE_KEY: ${{ secrets.REMOTE_SSH_KEY }}
+            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+            REMOTE_USER: "tpx2030_github"
+            TARGET: "/data/wwwroot/74.82.196.29/cancms.com"
+            # ARGS: "-avzr --delete" # 这个会引起  rsync  failed to set times  问题
+            ARGS: "-rlgoDzvc -i --delete"
+            SOURCE: "./public/"
+            EXCLUDE: "/node_modules/"
       
       
       

@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="content-section blog-list-page">
+    <div class="container">
+        <div class="row">
+          {{ $paginator:= .Paginate .RegularPages }}
+          {{ range $paginator.Pages }}
+            <div class="col-md-4 col-12 mb-14">
+              {{ partial "components/blog-card" . }}
+            </div>
+          {{ end }}
+        </div>
+        {{ partial "components/pagination.html" . }}
+    </div>
+  </section>
+{{ end }}

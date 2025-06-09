@@ -58,7 +58,7 @@ jobs:
             # SSH_CMD_ARGS (optional, default '-o StrictHostKeyChecking=no')
             # https://blog.csdn.net/weilaozongge/article/details/141926639
             # 最近的 OpenSSH 版本默认禁用了不够安全的算法，如 ssh-rsa, 远程服务器用的却是老的rsa
-            SSH_CMD_ARGS:  "-o HostkeyAlgorithms=+ssh-rsa, -o PubkeyAcceptedKeyTypes=+ssh-rsa"
+            SSH_CMD_ARGS:  "-o StrictHostKeyChecking=no -o HostkeyAlgorithms=+ssh-rsa, -o PubkeyAcceptedKeyTypes=+ssh-rsa"
       
       
       

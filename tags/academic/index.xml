@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic on CANCMS</title><link>https://cancms2030.github.io/tags/academic/</link><description>Recent content in Academic on CANCMS</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 08 Jun 2025 05:00:00 +0000</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml"/><item><title>用hugo blox academic cv主题时注意指定的 hugo 版本 0.136.5， 用最新的版本如147可能编不过</title><link>https://cancms2030.github.io/blog/blox-academic-cv/hugo-version/</link><pubDate>Sun, 08 Jun 2025 05:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/blox-academic-cv/hugo-version/</guid><description>&lt;h2 id="hugo-blox-学术cv-主题免费">Hugo Blox 学术CV 主题（免费）：&lt;/h2>
+&lt;p>github 代码：&lt;/p>
+&lt;p>&lt;a href="https://github.com/HugoBlox/theme-academic-cv">https://github.com/HugoBlox/theme-academic-cv&lt;/a>&lt;/p>
+&lt;p>网站demo:&lt;/p>
+&lt;p>&lt;a href="https://academic-demo.netlify.app/">https://academic-demo.netlify.app/&lt;/a>&lt;/p>
+&lt;p>在本地的调试环境如果Hugo的版本太新（0.147），也可能一大堆报错。&lt;/p>
+&lt;p>在github action的编译中，不明确指定hugo版本，可能报错。&lt;/p></description></item></channel></rss>

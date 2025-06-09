@@ -5,7 +5,6 @@ description: "this is meta description"
 date: 2022-04-04T05:00:00Z
 image: "/images/blog/2025-06/project1.jpg"
 categories: ["Application", "Data"]
-author: "John Doe"
 tags: ["nextjs", "tailwind"]
 draft: false
 ---

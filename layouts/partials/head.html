@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
@@ -21,7 +19,16 @@
     <script src="{{ "js/vendor/swiper-bundle.min.js" | relURL }}" defer></script>
     <script src="{{ "js/main.js" | relURL }}" defer></script>
 
-    
 
-</head>
-</rewritten_file> 
+    {{/*    百度统计*/}}
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?{{ .Site.Params.baidu_tongji_id }}";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+

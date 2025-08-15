@@ -48,8 +48,8 @@ jobs:
             SSH_PRIVATE_KEY: ${{ secrets.REMOTE_SSH_KEY }}
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
             REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-            REMOTE_USER: "tpx2030_github"
-            TARGET: "/data/wwwroot/74.82.196.29/cancms.com"
+            REMOTE_USER: "git"
+            TARGET: "/var/www/cancms.com/html"
             # ARGS: "-avzr --delete" # 这个会引起  rsync  failed to set times  问题
             ARGS: "-rlgoDzvc -i --delete"
             SOURCE: "./public/"
@@ -58,7 +58,7 @@ jobs:
             # SSH_CMD_ARGS (optional, default '-o StrictHostKeyChecking=no')
             # https://blog.csdn.net/weilaozongge/article/details/141926639
             # 最近的 OpenSSH 版本默认禁用了不够安全的算法，如 ssh-rsa, 远程服务器用的却是老的rsa
-            SSH_CMD_ARGS:  "-o StrictHostKeyChecking=no -o HostkeyAlgorithms=+ssh-rsa, -o PubkeyAcceptedKeyTypes=+ssh-rsa"
+            # SSH_CMD_ARGS:  "-o StrictHostKeyChecking=no -o HostkeyAlgorithms=+ssh-rsa, -o PubkeyAcceptedKeyTypes=+ssh-rsa"
       
       
       

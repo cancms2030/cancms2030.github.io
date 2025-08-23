@@ -14,7 +14,7 @@ theme = "cancms"
   taobao_shop = "https://item.taobao.com/item.htm?id=767084316219"
   weixin = "ncp2025"
 
-  baidu_tongji_id = "633952dd75036da9ccff0812740fb199"
+#  baidu_tongji_id = "633952dd75036da9ccff0812740fb199"
 
 [menus]
   [[menus.main]]

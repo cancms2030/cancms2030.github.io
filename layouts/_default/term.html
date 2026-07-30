@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="container">
+    <div class="term-list">
+        <h1>{{ .Title }}</h1>
+        {{ range .Pages }}
+        <article class="term-item">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Description }}</p>
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

@@ -1,11 +1,51 @@
-baseURL = "https://cancms2030.github.io/"
+baseURL = "https://www.cancms.com"
 languageCode = "zh-cn"
-title = "CANCMS"
+title = "cancms - 专业静态网站建站服务"
 theme = "cancms"
+defaultContentLanguage = "zh"
+
+# ========== SEO 核心配置 ==========
+enableRobotsTXT = true
+enableGitInfo = true
+
+# ========== 永久链接配置 ==========
+[permalinks]
+  blog = "/blog/:slug/"
+  services = "/services/"
+
+# ========== 站点地图配置 ==========
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# ========== 构建优化 ==========
+[build]
+  writeStats = true
+  [build.buildStats]
+    enable = true
+
+# ========== 分页配置 ==========
+[pagination]
+  pagerSize = 10
+  path = "page"
+
+# ========== 图片处理配置 ==========
+[imaging]
+  resampleFilter = "Lanczos"
+  quality = 75
+  anchor = "smart"
+  hint = "photo"
+
+# ========== Markdown 渲染配置 ==========
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
-  description = "为您提供最专业的网站建设服务"
-  keywords = "网站建设,网站开发,管理系统应用开发,UI设计"
+  description = "cancms提供专业静态网站建站服务，基于Hugo生成器，速度快、成本低、安全可靠。为企业、个人、学术机构提供一站式静态网站解决方案。"
+  keywords = "静态网站,静态网站建站,静态网站生成器,Hugo建站,静态网站开发,企业静态网站,个人网站建设,学术网站建设"
   author = "CANCMS"
   company = "CANCMS"
   address = ""
@@ -14,7 +54,13 @@ theme = "cancms"
   taobao_shop = "https://item.taobao.com/item.htm?id=767084316219"
   weixin = "ncp2025"
 
-#  baidu_tongji_id = "633952dd75036da9ccff0812740fb199"
+# ========== 统计分析配置 ==========
+# Google Analytics 4（请替换为实际 ID）
+[services.googleAnalytics]
+  id = "G-XXXXXXXXXX"
+
+# 百度统计
+baidu_tongji_id = "633952dd75036da9ccff0812740fb199"
 
 [menus]
   [[menus.main]]

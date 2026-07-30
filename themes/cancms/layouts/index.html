@@ -1,4 +1,30 @@
 {{ define "main" }}
+<!-- ========== JSON-LD 结构化数据（首页） ========== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "cancms",
+  "description": "专业静态网站建站服务提供商",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "cancms",
+  "description": "专业静态网站建站服务",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}images/logo.png"
+}
+</script>
+
 <!-- 轮播图 -->
 <div class="swiper">
     <div class="swiper-wrapper">
@@ -45,13 +71,13 @@
 <section class="slogan-section">
     <div class="container">
         <div class="slogan-content">
-            <h2 class="slogan-main">专注于<span style="color: var(--secondary-color);">中小型</span>网站建设服务</h2>
+            <h1 class="slogan-main">专业静态网站建站服务</h1>
             <div class="slogan-divider">
                 <span></span>
                 <i class="fas fa-star"></i>
                 <span></span>
             </div>
-            <p class="slogan-sub">打造现代化响应式的<span style="color: var(--secondary-color);">个人/企业</span>网站，展示积极的主体形象</p>
+            <p class="slogan-sub">基于Hugo生成器，速度快、成本低、安全可靠。为企业、个人、学术机构提供一站式静态网站解决方案。</p>
         </div>
     </div>
 </section>

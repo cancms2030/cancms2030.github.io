@@ -1,7 +1,8 @@
 ---
 title: "How to Deploy GitHub Pages: A Complete Step-by-Step Guide"
-keywords: "Deploy, GitHub Pages"
-description: "How to Deploy GitHub Pages"
+slug: "how-to-deploy-github-pages"
+keywords: ["GitHub Pages部署", "免费网站托管", "静态网站发布", "GitHub Pages教程"]
+description: "手把手教你如何将静态网站部署到GitHub Pages，从仓库创建到域名绑定，完整详细的部署教程，让网站免费上线。"
 date: 2025-06-08T05:00:00Z
 image: ""
 categories: ["Application", "Data"]

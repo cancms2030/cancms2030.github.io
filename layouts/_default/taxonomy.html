@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="container">
+    <div class="taxonomy-list">
+        <h1>{{ .Title }}</h1>
+        <ul>
+        {{ range .Data.Terms.Alphabetical }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+        {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="container">
+    <div class="blog-list">
+        {{ $pages := where .Site.RegularPages "Section" "blog" }}
+        {{ $paginator := .Paginate $pages }}
+        
+        {{ range $paginator.Pages }}
+        <article class="blog-item">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="blog-meta">
+                <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+                {{ if .Params.categories }}
+                <span class="categories">
+                    {{ range .Params.categories }}
+                    <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                </span>
+                {{ end }}
+            </div>
+            <p class="blog-description">{{ .Description }}</p>
+            <a href="{{ .Permalink }}" class="read-more">阅读更多 →</a>
+        </article>
+        {{ end }}
+        
+        {{ template "_internal/pagination.html" . }}
+    </div>
+</div>
+{{ end }}

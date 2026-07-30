@@ -1,11 +1,13 @@
 ---
 title: "用hugo blox academic cv主题时注意指定的 hugo 版本 0.136.5， 用最新的版本如147可能编不过"
-keywords: "hugo blox academic cv, hugo主题, hugo版本"
-description: "用hugo blox academic cv主题时注意指定的 hugo 版本 0.136.5， 用最新的版本如147可能编不过"
+slug: "hugo-banben"
+keywords: ["Hugo版本兼容", "Hugo Blox主题", "Academic CV主题", "Hugo编译报错", "Hugo版本管理"]
+description: "使用Hugo Blox Academic CV主题时，需注意指定Hugo版本0.136.5，使用最新版本如0.147可能导致编译报错，提供解决方案。"
 date: 2025-06-08T05:00:00Z
+lastmod: 2026-07-30T00:00:00Z
 image: "/images/blog/2025-06/blox-cv-hg-verison.png"
-categories: ["Application", "Data"]
-tags: ["hugoblox", "academic"]
+categories: ["Hugo教程"]
+tags: ["Hugo", "Hugo Blox", "Academic CV", "版本兼容", "故障排查"]
 draft: false
 ---
 

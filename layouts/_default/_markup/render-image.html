@@ -1,0 +1,15 @@
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+{{- if $image -}}
+  {{- $webp := $image.Resize "800x webp q75" -}}
+  {{- $fallback := $image.Resize "800x q75" -}}
+  <picture>
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+    <img src="{{ $fallback.RelPermalink }}" 
+         alt="{{ .Text }}" 
+         loading="lazy" 
+         width="{{ $fallback.Width }}" 
+         height="{{ $fallback.Height }}">
+  </picture>
+{{- else -}}
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy">
+{{- end -}}

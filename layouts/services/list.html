@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<div class="container">
+    <div class="content">
+        {{ .Content }}
+    </div>
+    
+    <!-- 服务列表 -->
+    <section class="services-list">
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-building"></i>
+                <h3>企业官网建设</h3>
+                <p>为企业提供专业、高性能的静态网站，提升品牌形象与在线影响力</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-user"></i>
+                <h3>个人品牌网站</h3>
+                <p>为个人品牌、自由职业者打造专业展示网站，突出个人特色与作品</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>学术网站建设</h3>
+                <p>为研究人员、学者、学术机构提供学术成果展示与知识传播平台</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-server"></i>
+                <h3>服务器环境配置</h3>
+                <p>提供服务器环境配置与优化服务，确保网站稳定高效运行</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-tools"></i>
+                <h3>网站维护服务</h3>
+                <p>提供持续的技术支持、内容更新与安全维护，保障网站长期稳定</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-rocket"></i>
+                <h3>静态网站部署</h3>
+                <p>专业部署服务，将静态网站快速部署到 CDN，确保全球访问速度</p>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

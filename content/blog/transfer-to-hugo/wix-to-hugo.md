@@ -1,7 +1,8 @@
 ---
 title: "wix网络问题打不开，打算转成hugo网站部署在github上面"
-keywords: "hugo静态网站, 转换, wix, github"
-description: "Wix 网站转成hugo静态网站"
+slug: "wix-to-hugo"
+keywords: ["hugo静态网站", "Wix转Hugo", "GitHub Pages部署", "静态网站迁移"]
+description: "Wix网站因网络问题无法访问，教你如何将Wix网站转换为Hugo静态网站并部署到GitHub Pages，实现快速、免费、稳定的网站托管。"
 date: 2025-06-08T05:00:00Z
 image: ""
 categories: ["Application", "Data"]

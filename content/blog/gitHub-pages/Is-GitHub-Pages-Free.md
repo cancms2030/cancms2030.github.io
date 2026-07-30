@@ -1,7 +1,8 @@
 ---
 title: "Is GitHub Pages free"
-keywords: "free, GitHub Pages"
-description: "Is GitHub Pages free?"
+slug: "is-github-pages-free"
+keywords: ["GitHub Pages免费", "GitHub Pages费用", "免费托管", "静态网站托管"]
+description: "全面解析GitHub Pages是否完全免费，包括定价模式、使用限制、配额详情，帮助您了解免费托管服务的真实成本。"
 date: 2025-06-08T05:00:00Z
 image: ""
 categories: [ "Application", "Data" ]

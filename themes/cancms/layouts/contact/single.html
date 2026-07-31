@@ -13,7 +13,10 @@
             <div class="text-content">
                 <p>欢迎通过以下方式联系我们：</p>
                 <ul>
-                    <li><i class="fas fa-shopping-cart"></i> 淘宝店：<a href="{{ .Site.Params.taobao_shop }}" class="text-link"  >{{ .Site.Params.taobao_shop }}</a></li>
+                    <li>
+                        <i class="fas fa-shopping-cart"></i> 淘宝店：<a href="{{ .Site.Params.taobao_shop }}" class="text-link"  >{{ .Site.Params.taobao_shop }}</a>
+                        <br> 欢迎用淘宝官方指定的客服渠道【旺旺】联系我们
+                    </li>
                     <li><i class="fa-solid fa-comment-dots"></i> 微信：<span class="text-link">{{ .Site.Params.weixin }}</span></li>
                     <li><i class="fas fa-envelope"></i> 邮箱：<a href="mailto:{{ .Site.Params.email }}" class="text-link" >{{ .Site.Params.email }}</a></li>
                     <li><i class="fas fa-clock"></i> 工作时间：周一至周五 9:00-18:00</li>

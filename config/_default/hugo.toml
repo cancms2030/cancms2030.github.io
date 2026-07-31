@@ -57,7 +57,7 @@ enableGitInfo = true
 # ========== 统计分析配置 ==========
 # Google Analytics 4（请替换为实际 ID）
 [services.googleAnalytics]
-  id = "G-XXXXXXXXXX"
+  id = "G-R68BVLKF44"
 
 # 百度统计
 baidu_tongji_id = "633952dd75036da9ccff0812740fb199"

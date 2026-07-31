@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>版本切换 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E7%89%88%E6%9C%AC%E5%88%87%E6%8D%A2/</link><description>Recent content in 版本切换 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E7%89%88%E6%9C%AC%E5%88%87%E6%8D%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>Docsy</title><link>https://cancms2030.github.io/themes/docsy/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/docsy/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Docsy 是由 Google 官方开发并维护的 Hugo 文档主题，专为大型开源项目和技术文档站点设计。Kubernetes、Istio、Tekton 等众多知名云原生项目均采用 Docsy 构建其官方文档，是业界公认的企业级文档解决方案。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;版本管理&lt;/strong&gt;：内置文档版本切换功能，支持多版本文档并存与无缝切换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言国际化&lt;/strong&gt;：完善的 i18n 支持，可轻松构建多语言文档站点&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;全文搜索&lt;/strong&gt;：集成 Algolia DocSearch 或本地 Lunr 搜索引擎&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;侧边栏导航&lt;/strong&gt;：自动生成的多级目录导航，支持手动排序与分组&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗色模式&lt;/strong&gt;：支持亮色/暗色主题切换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Swagger/OpenAPI&lt;/strong&gt;：原生支持 API 文档渲染&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub 集成&lt;/strong&gt;：自动生成&amp;quot;编辑此页&amp;quot;链接，方便社区贡献&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEO 优化&lt;/strong&gt;：完善的结构化数据与 Open Graph 标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;大型开源项目官方文档&lt;/li&gt;
+&lt;li&gt;企业级产品技术文档&lt;/li&gt;
+&lt;li&gt;API 接口文档站&lt;/li&gt;
+&lt;li&gt;多版本文档管理&lt;/li&gt;
+&lt;li&gt;需要社区协作贡献的文档项目&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 作为 Hugo Module 引入（推荐）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo mod get github.com/google/docsy
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 或使用 Git Submodule&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git submodule add https://github.com/google/docsy.git themes/docsy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Docsy 是目前最成熟、功能最完善的 Hugo 文档主题，由 Google 团队持续维护更新。如果你的项目需要专业级的文档站点，尤其是涉及多版本管理、API 文档或多语言支持，Docsy 是不二之选。其被众多顶级开源项目验证的稳定性和可扩展性，使其成为企业级文档建站的首选方案。&lt;/p&gt;</description></item></channel></rss>

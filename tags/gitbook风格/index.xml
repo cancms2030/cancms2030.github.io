@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GitBook风格 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/gitbook%E9%A3%8E%E6%A0%BC/</link><description>Recent content in GitBook风格 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/gitbook%E9%A3%8E%E6%A0%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Theme Learn</title><link>https://cancms2030.github.io/themes/hugo-theme-learn/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/hugo-theme-learn/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Hugo Theme Learn 是最早流行的 Hugo 文档主题之一，完美复刻了 GitBook 的经典阅读体验。其直观的侧边栏导航、清晰的章节结构和丰富的短代码支持，使其成为构建产品手册、培训资料和学习指南的理想选择。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitBook 经典风格&lt;/strong&gt;：熟悉的左侧目录 + 右侧内容布局，用户零学习成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多级目录导航&lt;/strong&gt;：支持无限层级的章节嵌套，自动高亮当前阅读位置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;全文搜索&lt;/strong&gt;：内置基于 Lunr.js 的客户端搜索，无需后端服务&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：完善的 i18n 机制，支持中英文及更多语言&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;丰富短代码&lt;/strong&gt;：内置提示框、标签页、按钮、图标等实用短代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mermaid 图表&lt;/strong&gt;：支持流程图、时序图等可视化内容&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;打印友好&lt;/strong&gt;：优化的打印样式，方便导出 PDF&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响应式设计&lt;/strong&gt;：适配桌面端和移动设备&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;产品使用手册&lt;/li&gt;
+&lt;li&gt;内部培训资料&lt;/li&gt;
+&lt;li&gt;在线教程与学习指南&lt;/li&gt;
+&lt;li&gt;知识库与帮助文档&lt;/li&gt;
+&lt;li&gt;技术入门指南&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 克隆主题到 themes 目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/matcornic/hugo-theme-learn.git themes/hugo-theme-learn
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 在 config.toml 中设置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;theme &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;hugo-theme-learn&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Hugo Theme Learn 以其经典的 GitBook 风格和极低的上手门槛，特别适合需要快速搭建文档站点的团队。如果你的用户群体熟悉 GitBook 的阅读体验，或者你需要构建面向非技术人员的培训资料和教程，Learn 主题是最佳选择。虽然项目维护频率有所降低，但其稳定性和成熟度仍然值得信赖。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技能展示 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E6%8A%80%E8%83%BD%E5%B1%95%E7%A4%BA/</link><description>Recent content in 技能展示 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E6%8A%80%E8%83%BD%E5%B1%95%E7%A4%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Profile</title><link>https://cancms2030.github.io/themes/hugo-profile/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/hugo-profile/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Hugo Profile 是一款专为个人作品集和在线简历设计的 Hugo 主题，采用移动优先的设计理念，确保在各种设备上都有出色的展示效果。它提供了完整的作品集展示、技能图表、项目经历等模块，是求职者和自由职业者打造个人品牌的理想选择。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;移动优先设计&lt;/strong&gt;：从移动端开始设计，逐步增强桌面端体验&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作品集展示&lt;/strong&gt;：内置项目卡片组件，支持图片、描述、链接和技术标签&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技能展示&lt;/strong&gt;：支持进度条和技能标签两种展示方式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;时间线组件&lt;/strong&gt;：用于展示工作经历、教育背景等时间线内容&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗色模式&lt;/strong&gt;：支持亮色/暗色主题切换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：完善的 i18n 国际化机制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;社交链接&lt;/strong&gt;：支持主流社交平台图标和链接&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;联系表单&lt;/strong&gt;：集成 Formspree 等第三方表单服务&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEO 优化&lt;/strong&gt;：完整的结构化数据和 Open Graph 标签&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;轻量快速&lt;/strong&gt;：无重型框架依赖，加载速度极快&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;求职者在线简历&lt;/li&gt;
+&lt;li&gt;自由职业者作品展示&lt;/li&gt;
+&lt;li&gt;开发者个人主页&lt;/li&gt;
+&lt;li&gt;设计师作品集&lt;/li&gt;
+&lt;li&gt;毕业生求职页面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 克隆主题&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 在 config.toml 中设置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;theme &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;hugo-profile&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Hugo Profile 专注于&amp;quot;展示个人&amp;quot;这一核心需求，所有功能都围绕作品集和简历展开。相比通用型主题，它的配置更直观、模块更聚焦，特别适合需要在短时间内搭建一个专业个人页面的用户。移动优先的设计也确保了在手机端的完美展示，这在招聘场景中尤为重要。&lt;/p&gt;</description></item></channel></rss>

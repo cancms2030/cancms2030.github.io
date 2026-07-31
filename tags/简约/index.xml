@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>简约 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E7%AE%80%E7%BA%A6/</link><description>Recent content in 简约 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E7%AE%80%E7%BA%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>Congo</title><link>https://cancms2030.github.io/themes/congo/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/congo/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Congo 是一款基于 Tailwind CSS 构建的现代简约 Hugo 主题，专为个人品牌和作品集展示设计。它在保持轻量的同时提供了丰富的功能，以&amp;quot;少即是多&amp;quot;的设计哲学打造出既美观又高效的个人网站。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tailwind CSS 驱动&lt;/strong&gt;：完全可定制的配色方案和排版样式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗色模式&lt;/strong&gt;：自动检测系统偏好，支持手动切换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：内置 i18n 国际化，支持多种语言&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响应式设计&lt;/strong&gt;：完美适配所有设备尺寸&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEO 友好&lt;/strong&gt;：完整的 Open Graph、Twitter Cards 和 Schema.org 结构化数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文章分类与标签&lt;/strong&gt;：灵活的分类体系，支持自定义 taxonomy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;代码高亮&lt;/strong&gt;：内置语法高亮，支持行号和复制按钮&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;图片优化&lt;/strong&gt;：自动处理响应式图片和懒加载&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;社交链接&lt;/strong&gt;：支持 50+ 种社交平台图标&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;零 JavaScript 依赖&lt;/strong&gt;：核心功能无需 JS，极致性能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;个人品牌官方网站&lt;/li&gt;
+&lt;li&gt;开发者/设计师简历页&lt;/li&gt;
+&lt;li&gt;技术博客&lt;/li&gt;
+&lt;li&gt;自由职业者作品展示&lt;/li&gt;
+&lt;li&gt;minimalist 风格爱好者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 作为 Hugo Module 引入（推荐）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo mod get github.com/jpanther/congo/v2
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 在 hugo.toml 中配置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;module&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[[&lt;/span&gt;module.imports&lt;span style="color:#f92672"&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; path &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;github.com/jpanther/congo/v2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Congo 在功能丰富与极简设计之间找到了完美的平衡点。相比 Blowfish 的全面，Congo 更注重&amp;quot;恰到好处&amp;quot;——它提供了个人品牌站所需的所有核心功能，同时保持了代码的简洁和加载的极速。如果你追求现代感但不喜欢过度设计，Congo 是理想选择。&lt;/p&gt;</description></item><item><title>hugo-theme-jane</title><link>https://cancms2030.github.io/themes/hugo-theme-jane/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/hugo-theme-jane/</guid><description>&lt;p&gt;自 2018 年起持续维护更新。设计干净清晰，注重阅读体验。&lt;/p&gt;</description></item></channel></rss>

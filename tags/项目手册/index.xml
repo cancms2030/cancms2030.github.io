@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>项目手册 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E9%A1%B9%E7%9B%AE%E6%89%8B%E5%86%8C/</link><description>Recent content in 项目手册 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E9%A1%B9%E7%9B%AE%E6%89%8B%E5%86%8C/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo-book</title><link>https://cancms2030.github.io/themes/hugo-book/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/hugo-book/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;hugo-book 是一款专为技术文档和项目手册设计的 Hugo 主题，以其简洁如书本的阅读体验和清晰的侧边栏导航而闻名。该主题在 GitHub 上拥有超过 3500 Star，是 Hugo 生态中最成熟、使用最广泛的文档主题之一。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;书本式阅读体验&lt;/strong&gt;：左右分栏布局，左侧目录导航，右侧内容区域，模拟纸质书籍的阅读感受&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：内置 i18n 支持，可轻松构建中英文或多语言文档站点&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;客户端搜索&lt;/strong&gt;：基于 FlexSearch 的全文搜索功能，无需后端服务&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗色模式&lt;/strong&gt;：支持亮色/暗色主题切换，保护长时间阅读的视力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响应式设计&lt;/strong&gt;：完美适配桌面端、平板和移动设备&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mermaid 图表&lt;/strong&gt;：原生支持 Mermaid 流程图、时序图等可视化内容&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KaTeX 数学公式&lt;/strong&gt;：支持 LaTeX 数学公式渲染，适合技术文档&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;零依赖&lt;/strong&gt;：不依赖任何外部 CDN 或 JavaScript 框架，加载速度极快&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;开源项目技术文档&lt;/li&gt;
+&lt;li&gt;API 接口文档&lt;/li&gt;
+&lt;li&gt;产品使用手册&lt;/li&gt;
+&lt;li&gt;内部知识库&lt;/li&gt;
+&lt;li&gt;教程与学习指南&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 添加主题模块&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo mod get github.com/alex-shpak/hugo-book
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 或在 config.toml 中配置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;module&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[[&lt;/span&gt;module.imports&lt;span style="color:#f92672"&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; path &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;github.com/alex-shpak/hugo-book&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;hugo-book 以其极简的设计哲学和出色的阅读体验，成为技术文档建站的首选主题。无论是个人项目文档还是企业级产品手册，都能提供专业、清晰的展示效果。其零依赖架构确保了极致的加载性能，非常适合对 SEO 和用户体验有高要求的文档站点。&lt;/p&gt;</description></item></channel></rss>

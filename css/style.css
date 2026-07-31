@@ -297,11 +297,686 @@ body {
     background: var(--light-gray);
 }
 
+/* ===== Guide Hero 区域 ===== */
+.guide-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 80px;
+  margin-top: 80px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.guide-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.guide-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(30, 136, 229, 0.25) 0%, transparent 70%),
+              radial-gradient(ellipse at 70% 50%, rgba(124, 77, 255, 0.2) 0%, transparent 70%);
+  z-index: 2;
+}
+
+.guide-hero-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(30, 136, 229, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(124, 77, 255, 0.08) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.guide-hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+}
+
+.guide-hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.guide-hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #fff 30%, #90caf9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.guide-hero-subtitle {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 680px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.guide-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+
+.guide-hero-stats .stat-item {
+  text-align: center;
+}
+
+.guide-hero-stats .stat-number {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #64b5f6, #b39ddb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.guide-hero-stats .stat-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+}
+
+.guide-hero-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.guide-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.guide-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.guide-nav-btn.primary {
+  background: linear-gradient(135deg, #1e88e5, #7c4dff);
+  border-color: transparent;
+  color: #fff;
+}
+
+.guide-nav-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(30, 136, 229, 0.35);
+  background: linear-gradient(135deg, #1e88e5, #7c4dff);
+  color: #fff;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .guide-hero {
+    min-height: 420px;
+    padding: 80px 0 60px;
+  }
+
+  .guide-hero-content h1 {
+    font-size: 30px;
+  }
+
+  .guide-hero-subtitle {
+    font-size: 17px;
+  }
+
+  .guide-hero-stats {
+    gap: 24px;
+  }
+
+  .guide-hero-stats .stat-number {
+    font-size: 24px;
+  }
+
+  .guide-hero-nav {
+    gap: 8px;
+  }
+
+  .guide-nav-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .guide-hero-content h1 {
+    font-size: 24px;
+  }
+
+  .guide-hero-stats {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .guide-nav-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
 .features h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 50px;
     color: var(--primary-color);
+}
+
+/* ===== Guide 内容区域样式 ===== */
+.guide-section {
+  padding: 60px 0;
+}
+
+.guide-section:nth-child(even) {
+  background: var(--light-gray);
+}
+
+.guide-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.guide-section .section-number {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: rgba(30, 136, 229, 0.1);
+  padding: 4px 16px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.guide-section .section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.guide-section .section-desc {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 文章列表网格 */
+.guide-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.guide-article-card {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid #e8ecf1;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.guide-article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.guide-article-card .card-number {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-color);
+  background: rgba(30, 136, 229, 0.08);
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.guide-article-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.guide-article-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.guide-article-card .read-time {
+  font-size: 13px;
+  color: #999;
+}
+
+/* FAQ 卡片样式 */
+/* FAQ 卡片样式 - 优化版 */
+
+.faq-grid-wrapper {
+    h3 {
+        margin: 5rem 0 2rem 0;
+    }
+}
+
+.faq-grid-wrapper .faq-item {
+  background: #fff;
+  border: 2px solid #e8ecf1;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.faq-grid-wrapper .faq-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 32px rgba(30, 136, 229, 0.12);
+  transform: translateY(-2px);
+}
+
+/* 问题区域 - 卡片头部（独立区块）*/
+.faq-grid-wrapper .faq-item summary {
+  padding: 24px 32px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2c3e50;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: all 0.25s ease;
+  user-select: none;
+  position: relative;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-bottom: 2px solid transparent;
+  min-height: 72px;
+}
+
+.faq-grid-wrapper .faq-item[open] summary {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+  border-bottom: 2px solid #bbdefb;
+  padding-bottom: 20px;
+}
+
+.faq-grid-wrapper .faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 问题编号 - 醒目标记 */
+.faq-grid-wrapper .faq-item .faq-number {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(30, 136, 229, 0.25);
+}
+
+.faq-grid-wrapper .faq-item:hover .faq-number {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 5px 16px rgba(30, 136, 229, 0.35);
+}
+
+.faq-grid-wrapper .faq-item[open] .faq-number {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #651fff 100%);
+  box-shadow: 0 3px 10px rgba(124, 77, 255, 0.3);
+}
+
+/* 问题文字 */
+.faq-grid-wrapper .faq-item .faq-question-text {
+  flex: 1;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+/* 展开/收起图标 */
+.faq-grid-wrapper .faq-item .faq-toggle-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #90a4ae;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+.faq-grid-wrapper .faq-item .faq-toggle-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+}
+
+.faq-grid-wrapper .faq-item[open] .faq-toggle-icon {
+  transform: rotate(180deg);
+  color: var(--primary-color);
+  background: rgba(30, 136, 229, 0.1);
+}
+
+.faq-grid-wrapper .faq-item summary:hover .faq-toggle-icon {
+  color: var(--primary-color);
+  background: rgba(30, 136, 229, 0.08);
+  transform: scale(1.05);
+}
+
+/* 答案内容 - 独立卡片区块 */
+.faq-grid-wrapper .faq-item .faq-answer {
+  padding: 28px 32px 28px 86px;
+  color: #37474f;
+  line-height: 2;
+  font-size: 16px;
+  background: #ffffff;
+  animation: faqAnswerSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 1px solid var(--primary-color);
+  margin: 12px 12px 12px 12px;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.faq-grid-wrapper .faq-item .faq-answer p {
+  margin-bottom: 12px;
+}
+
+.faq-grid-wrapper .faq-item .faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-grid-wrapper .faq-item .faq-answer strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.faq-grid-wrapper .faq-item .faq-answer ul,
+.faq-grid-wrapper .faq-item .faq-answer ol {
+  margin: 12px 0 12px 24px;
+  padding-left: 8px;
+}
+
+.faq-grid-wrapper .faq-item .faq-answer li {
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+@keyframes faqAnswerSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 2000px;
+  }
+}
+
+@keyframes faqAnswerIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .faq-grid-wrapper .faq-item {
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .faq-grid-wrapper .faq-item summary {
+    padding: 20px 22px;
+    font-size: 16px;
+    gap: 14px;
+    min-height: 64px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-number {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-toggle-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-toggle-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-answer {
+    padding: 22px 22px 22px 68px;
+    font-size: 15px;
+    line-height: 1.9;
+    border-left-width: 3px;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-grid-wrapper .faq-item {
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+
+  .faq-grid-wrapper .faq-item summary {
+    padding: 16px 16px;
+    font-size: 15px;
+    gap: 12px;
+    min-height: 56px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-number {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-toggle-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-toggle-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-answer {
+    padding: 18px 16px 18px 56px;
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 8px 8px 8px 8px;
+    border-left-width: 3px;
+  }
+}
+
+/* CTA 区域 */
+.guide-cta {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  text-align: center;
+}
+
+.guide-cta .cta-box h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.guide-cta .cta-box p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.guide-cta .cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.guide-cta .btn-primary,
+.guide-cta .btn-secondary {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.guide-cta .btn-primary {
+  background: linear-gradient(135deg, #1e88e5, #7c4dff);
+  color: #fff;
+}
+
+.guide-cta .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(30, 136, 229, 0.35);
+  color: #fff;
+}
+
+.guide-cta .btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.guide-cta .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .guide-section {
+    padding: 40px 0;
+  }
+
+  .guide-section .section-header h2 {
+    font-size: 26px;
+  }
+
+  .guide-section .section-desc {
+    font-size: 16px;
+  }
+
+  .guide-articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-grid-wrapper .faq-item summary {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .faq-grid-wrapper .faq-item .faq-answer {
+    padding: 0 18px 16px 18px;
+    font-size: 14px;
+  }
+
+  .guide-cta {
+    padding: 50px 0;
+  }
+
+  .guide-cta .cta-box h2 {
+    font-size: 28px;
+  }
+
+  .guide-cta .cta-box p {
+    font-size: 16px;
+  }
+
+  .guide-cta .btn-primary,
+  .guide-cta .btn-secondary {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .guide-section .section-header h2 {
+    font-size: 22px;
+  }
+
+  .guide-cta .cta-box h2 {
+    font-size: 24px;
+  }
 }
 
 .features-grid {
@@ -1458,3 +2133,262 @@ body {
 .w-full {
     width: 100%;
 }
+
+
+
+/* ===== Themes Hero 大图区域 ===== */
+.themes-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 12rem 2rem;
+  margin: 8rem 0 2rem 0;
+  border-radius: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.themes-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.themes-hero h1 {
+  /* font-size: 2.8rem; */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.themes-hero-subtitle {
+  /* font-size: 1.2rem; */
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.themes-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== 分类筛选导航 ===== */
+.theme-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 2rem 0 8rem 0;
+  justify-content: center;
+}
+
+.theme-filters a {
+  padding: 0.4rem 1rem;
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 20px;
+  text-decoration: none;
+  /* font-size: 0.9rem; */
+  transition: all 0.3s;
+}
+
+.theme-filters a:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.theme-filters a.active {
+  background: #007acc;
+  color: #fff;
+}
+
+/* ===== 主题卡片网格 ===== */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 4rem;
+}
+
+/* ===== 主题卡片 ===== */
+.theme-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.theme-card-image-wrapper {
+  background: #f5f5f5;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.theme-card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.theme-card:hover .theme-card-image-wrapper img {
+  transform: scale(1.03);
+}
+
+.theme-info {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.theme-info h3 {
+  font-size: 1.8rem;
+  margin: 0 0 0.4rem 0;
+}
+
+.theme-info h3 a {
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+.theme-info h3 a:hover {
+  color: #007acc;
+}
+
+.theme-info p {
+  /* font-size: 0.9rem; */
+  color: #666;
+  margin: 2rem 0;
+  line-height: 1.5;
+}
+
+.theme-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 0.85rem; */
+  color: #888;
+  margin-bottom: 0.8rem;
+}
+
+.theme-meta .category {
+  background: #e8f0fe;
+  color: #007acc;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  /* font-size: 0.75rem; */
+}
+
+.theme-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.theme-links a {
+  padding: 0.3rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.theme-links a:first-child {
+  background: #007acc;
+  color: #fff;
+}
+
+.theme-links a:first-child:hover {
+  background: #005a9e;
+}
+
+.theme-links a:last-child {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.theme-links a:last-child:hover {
+  background: #e0e0e0;
+}
+
+/* ===== 分页导航 ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 1rem 0;
+}
+
+.pagination a {
+  padding: 0.5rem 1.2rem;
+  background: #007acc;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.pagination a:hover {
+  background: #005a9e;
+}
+
+.pagination-info {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .themes-hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .themes-hero h1 {
+    font-size: 2rem;
+  }
+
+  .themes-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .themes-hero-stats {
+    gap: 0.8rem;
+  }
+
+  .stat-item {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .themes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .theme-filters {
+    gap: 0.4rem;
+  }
+
+  .theme-filters a {
+    /* font-size: 0.8rem; */
+    padding: 0.3rem 0.8rem;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+}
+
+

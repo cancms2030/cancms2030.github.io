@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>现代化 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E7%8E%B0%E4%BB%A3%E5%8C%96/</link><description>Recent content in 现代化 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E7%8E%B0%E4%BB%A3%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>Hextra</title><link>https://cancms2030.github.io/themes/hextra/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/hextra/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Hextra 是一款新一代的 Hugo 文档主题，基于 Tailwind CSS 构建，融合了现代 Web 设计理念。它不仅是一个出色的文档主题，还内置了博客功能，适合同时需要文档站和博客的团队或个人。其精美的设计和流畅的交互体验，使其成为近年来增长最快的 Hugo 文档主题之一。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tailwind CSS 驱动&lt;/strong&gt;：基于 utility-first CSS 框架，样式高度可定制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文档+博客双模式&lt;/strong&gt;：同一站点可同时承载文档和博客内容&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;全文搜索&lt;/strong&gt;：内置 FlexSearch 全文搜索引擎，响应迅速&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗色模式&lt;/strong&gt;：跟随系统偏好或手动切换，过渡动画流畅&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;侧边栏导航&lt;/strong&gt;：自动生成的多级目录，支持折叠展开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：完善的 i18n 国际化机制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;代码高亮与复制&lt;/strong&gt;：语法高亮 + 一键复制按钮&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KaTeX 数学公式&lt;/strong&gt;：支持 LaTeX 数学公式渲染&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEO 友好&lt;/strong&gt;：完善的 Open Graph、Twitter Cards 和 JSON-LD 结构化数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;技术文档 + 博客一体化站点&lt;/li&gt;
+&lt;li&gt;开源项目文档&lt;/li&gt;
+&lt;li&gt;个人技术博客与知识库&lt;/li&gt;
+&lt;li&gt;产品帮助中心&lt;/li&gt;
+&lt;li&gt;学习笔记与教程站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 作为 Hugo Module 引入（推荐）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo mod get github.com/imfing/hextra
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 在 hugo.toml 中配置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;module&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[[&lt;/span&gt;module.imports&lt;span style="color:#f92672"&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; path &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;github.com/imfing/hextra&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Hextra 代表了 Hugo 文档主题的新方向——更现代的设计、更好的性能和更灵活的用途。如果你希望文档站点拥有现代化的视觉体验，或者需要在同一站点中兼顾文档和博客两种内容形式，Hextra 是当前最佳选择。其基于 Tailwind CSS 的架构也使得二次开发和样式定制变得更加简单高效。&lt;/p&gt;</description></item></channel></rss>

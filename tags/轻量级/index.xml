@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>轻量级 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7/</link><description>Recent content in 轻量级 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E8%BD%BB%E9%87%8F%E7%BA%A7/index.xml" rel="self" type="application/rss+xml"/><item><title>Docket</title><link>https://cancms2030.github.io/themes/docket/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/docket/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Docket 是一款追求极致简洁的 Hugo 文档主题，摒弃了一切不必要的装饰和功能，将注意力完全聚焦于内容本身。对于不需要复杂功能、只想快速搭建一个干净文档站点的开发者来说，Docket 提供了一个零负担的选择。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;极简设计&lt;/strong&gt;：无多余装饰，纯净的阅读体验&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;零配置启动&lt;/strong&gt;：开箱即用，无需复杂配置即可生成文档站&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语义化 HTML&lt;/strong&gt;：良好的可访问性和 SEO 基础&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响应式布局&lt;/strong&gt;：适配各种屏幕尺寸&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;代码高亮&lt;/strong&gt;：内置语法高亮支持&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;轻量级&lt;/strong&gt;：极小的 CSS/JS 体积，加载速度极快&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;易于定制&lt;/strong&gt;：简洁的代码结构，方便二次开发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;小型开源项目文档&lt;/li&gt;
+&lt;li&gt;API 参考手册&lt;/li&gt;
+&lt;li&gt;个人技术笔记与知识库&lt;/li&gt;
+&lt;li&gt;内部工具使用说明&lt;/li&gt;
+&lt;li&gt;快速原型文档&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 克隆主题&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/refactorian/docket.git themes/docket
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 在 config.toml 中设置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;theme &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;docket&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Docket 适合那些&amp;quot;只需要一个好用的文档页面&amp;quot;的场景。当你的项目规模不大、不需要版本管理和多语言等高级功能时，Docket 的极简哲学反而是一种优势——没有学习成本、没有配置负担、没有性能浪费。它也适合作为自定义文档主题的起点，在其简洁的代码基础上进行二次开发。&lt;/p&gt;</description></item></channel></rss>

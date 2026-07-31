@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图片画廊 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/</link><description>Recent content in 图片画廊 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Aug 2026 01:57:54 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E5%9B%BE%E7%89%87%E7%94%BB%E5%BB%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>Blowfish</title><link>https://cancms2030.github.io/themes/blowfish/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/themes/blowfish/</guid><description>&lt;h2 id="主题简介"&gt;主题简介&lt;/h2&gt;
+&lt;p&gt;Blowfish 是一款基于 Tailwind CSS 构建的功能强大的 Hugo 个人主题，专为个人品牌展示、作品集和技术博客设计。它提供了极其丰富的配置选项和组件库，让你无需编写任何代码就能打造出专业级的个人网站。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tailwind CSS 驱动&lt;/strong&gt;：完全基于 utility-first CSS 框架，样式高度可定制&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗色模式&lt;/strong&gt;：自动跟随系统偏好或手动切换，过渡动画流畅自然&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：完善的 i18n 国际化机制，支持 20+ 种语言&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;图片画廊&lt;/strong&gt;：内置响应式图片画廊组件，支持灯箱效果&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEO 优化&lt;/strong&gt;：完整的 Open Graph、Twitter Cards、JSON-LD 结构化数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;丰富短代码&lt;/strong&gt;：徽章、按钮、图标、提示框、时间线等 20+ 种组件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文章系列&lt;/strong&gt;：支持将多篇文章组织为系列，自动导航&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作者信息&lt;/strong&gt;：支持多作者模式，每位作者有独立头像和简介&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;搜索功能&lt;/strong&gt;：内置 Fuse.js 全文搜索&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;评论系统&lt;/strong&gt;：支持 Disqus、Giscus、Utterances 等多种评论方案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="适用场景"&gt;适用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;个人品牌官方网站&lt;/li&gt;
+&lt;li&gt;设计师/开发者作品集&lt;/li&gt;
+&lt;li&gt;技术博客与知识分享&lt;/li&gt;
+&lt;li&gt;自由职业者服务展示&lt;/li&gt;
+&lt;li&gt;学术研究者主页&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="快速开始"&gt;快速开始&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 作为 Hugo Module 引入（推荐）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo mod get github.com/nunocoracao/blowfish/v2
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 在 hugo.toml 中配置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[&lt;/span&gt;module&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[[&lt;/span&gt;module.imports&lt;span style="color:#f92672"&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; path &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;github.com/nunocoracao/blowfish/v2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="推荐理由"&gt;推荐理由&lt;/h2&gt;
+&lt;p&gt;Blowfish 是目前功能最全面的 Hugo 个人主题之一，其基于 Tailwind CSS 的架构使得样式定制变得异常简单。无论你是想搭建一个简洁的个人简历页，还是一个内容丰富的技术博客，Blowfish 都能通过配置而非编码来满足需求。活跃的社区和频繁的更新也确保了主题的长期可用性。&lt;/p&gt;</description></item></channel></rss>

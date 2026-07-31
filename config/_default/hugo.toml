@@ -94,5 +94,11 @@ baidu_tongji_id = "633952dd75036da9ccff0812740fb199"
     url = "/blog/"
     weight = 5
 
+  [[menus.main]]
+    identifier = "guide"
+    name = "学习指南"
+    url = "/guide/"
+    weight = 6
+
 [outputs]
   home = ["HTML", "RSS", "JSON"] 

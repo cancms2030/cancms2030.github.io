@@ -6,7 +6,7 @@ description: "深入分析企业选择静态网站开发的五大核心优势：
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["建站教程"]
 tags: ["企业静态网站", "静态网站开发", "企业建站", "数字化转型"]
 draft: false
 ---

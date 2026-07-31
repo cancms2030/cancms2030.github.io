@@ -1,0 +1,6 @@
+<a href="{{ .RelPermalink }}" class="guide-article-card">
+  <span class="card-number">{{ add .Weight 1 }}</span>
+  <h3>{{ .Title }}</h3>
+  <p>{{ .Description | truncate 80 }}</p>
+  <span class="read-time">⏱ {{ .ReadingTime }}分钟</span>
+</a>

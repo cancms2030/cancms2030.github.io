@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <article class="theme-detail">
+    <h1>{{ .Title }}</h1>
+    <img src="{{ .Params.screenshot }}" alt="{{ .Title }}" loading="lazy">
+
+    <div class="theme-full-description">
+      {{ .Content }}
+    </div>
+
+    <div class="theme-specs">
+      <p>⭐ GitHub Star：{{ .Params.stars }}</p>
+      <p>分类：{{ delimit .Params.categories ", " }}</p>
+      <p>标签：{{ delimit .Params.tags ", " }}</p>
+    </div>
+
+    <div class="theme-actions">
+      <a href="{{ .Params.demo }}" class="btn-primary" target="_blank">在线演示</a>
+      <a href="{{ .Params.github }}" class="btn-secondary" target="_blank">查看源码</a>
+    </div>
+
+    <!-- CTA 引导 -->
+    <div class="theme-cta">
+      <p>需要定制化开发？<a href="/services/">联系我们 →</a></p>
+    </div>
+  </article>
+{{ end }}

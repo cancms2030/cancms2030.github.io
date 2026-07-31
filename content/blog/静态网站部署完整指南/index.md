@@ -6,7 +6,7 @@ description: "一份完整的静态网站部署指南，涵盖从代码提交、
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["部署运维"]
 tags: ["静态网站部署", "Hugo", "GitHub Pages", "持续集成", "CDN"]
 draft: false
 ---

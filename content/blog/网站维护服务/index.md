@@ -6,7 +6,7 @@ description: "全面解析静态网站维护服务的工作内容，涵盖内容
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["运维管理"]
 tags: ["网站维护", "静态网站", "网站运维", "安全维护"]
 draft: false
 ---

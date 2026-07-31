@@ -6,7 +6,7 @@ description: "全面解析学术网站建设的核心要素，从研究展示、
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["建站教程"]
 tags: ["学术网站", "学者", "研究成果", "个人品牌"]
 draft: false
 ---

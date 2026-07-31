@@ -1,0 +1,21 @@
+{{ define "main" }}
+  {{ partial "guide-faq-schema.html" . }}
+  {{ partial "guide-hero.html" . }}
+
+  <section id="quick-start" class="guide-section">
+    <div class="container">
+      <h2>📖 新手入门</h2>
+      <p>如果你是新手，建议按顺序阅读以下内容：</p>
+      {{ .Content }}
+    </div>
+  </section>
+
+  <section id="cta" class="guide-cta">
+    <div class="container">
+      <h2>准备好了吗？让我们帮你建一个更好的网站</h2>
+      <p>以上所有知识我们已经帮你实践了无数遍。告诉我们你的需求，我们帮你实现。</p>
+      <a href="/services/" class="btn-primary">查看服务</a>
+      <a href="/contact/" class="btn-secondary">立即咨询</a>
+    </div>
+  </section>
+{{ end }}

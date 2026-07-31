@@ -6,7 +6,7 @@ description: "从零开始学习Hugo建站，手把手教你安装Hugo、创建�
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["Hugo教程"]
+categories: ["建站教程"]
 tags: ["Hugo", "静态网站", "建站教程", "入门指南"]
 draft: false
 ---

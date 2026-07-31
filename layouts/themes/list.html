@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <h1>Hugo 免费主题资源库</h1>
+  <p>收录 50 款优质免费 Hugo 主题，按场景分类，方便选择</p>
+
+  <!-- 分类筛选导航 -->
+  <nav class="theme-filters">
+    <a href="#all" class="active">全部</a>
+    {{ range $taxonomy := .Site.Taxonomies.categories }}
+      <a href="#{{ .Page.Title | urlize }}">{{ .Page.Title }}</a>
+    {{ end }}
+  </nav>
+
+  <!-- 主题列表 -->
+  <div class="themes-grid">
+    {{ range .Pages.ByParam "stars" }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </div>
+{{ end }}

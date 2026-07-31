@@ -6,7 +6,7 @@ description: "全面对比静态网站与动态网站的架构、性能、成本
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["基础概念"]
 tags: ["静态网站", "动态网站", "网站架构", "技术选型"]
 draft: false
 ---

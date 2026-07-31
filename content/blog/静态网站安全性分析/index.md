@@ -6,7 +6,7 @@ description: "深入分析静态网站的安全优势，对比动态网站常见
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["运维管理"]
 tags: ["静态网站", "网站安全", "网络安全", "攻击防护"]
 draft: false
 ---

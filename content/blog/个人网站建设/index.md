@@ -6,7 +6,7 @@ description: "全面解析如何用静态网站打造个人品牌，从定位、
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["建站教程"]
 tags: ["个人网站", "个人品牌", "静态网站", "建站指南"]
 draft: false
 ---

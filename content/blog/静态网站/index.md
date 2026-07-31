@@ -5,7 +5,7 @@ description: "深入分析企业采用静态网站的优势，包括加载速度
 keywords: ["静态网站优势", "企业静态网站", "静态网站速度", "静态网站安全", "静态网站成本"]
 date: 2026-07-30
 lastmod: 2026-07-30
-categories: ["建站知识"]
+categories: ["基础概念"]
 tags: ["静态网站", "SEO优化"]
 draft: false
 ---

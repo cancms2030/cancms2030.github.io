@@ -6,7 +6,7 @@ description: "全面分析静态网站建站的各项成本，对比传统动态
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["选型对比"]
 tags: ["静态网站", "建站成本", "企业预算", "成本分析"]
 draft: false
 ---

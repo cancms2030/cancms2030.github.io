@@ -6,7 +6,7 @@ description: "全面解析静态网站SEO优化的核心策略，涵盖关键词
 date: 2026-07-31T00:00:00Z
 lastmod: 2026-07-31T00:00:00Z
 image: ""
-categories: ["建站知识"]
+categories: ["运维管理"]
 tags: ["SEO优化", "静态网站", "搜索引擎优化", "网站排名"]
 draft: false
 ---

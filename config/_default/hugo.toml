@@ -100,5 +100,11 @@ baidu_tongji_id = "633952dd75036da9ccff0812740fb199"
     url = "/guide/"
     weight = 6
 
+  [[menus.main]]
+    identifier = "themes"
+    name = "主题库"
+    url = "/themes/"
+    weight = 7
+
 [outputs]
   home = ["HTML", "RSS", "JSON"] 

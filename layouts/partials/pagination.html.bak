@@ -1,0 +1,11 @@
+{{ if gt .TotalPages 1 }}
+  <nav class="pagination">
+    {{ if .HasPrev }}
+      <a href="{{ .Prev.URL }}" class="pagination-prev">← 上一页</a>
+    {{ end }}
+    <span class="pagination-info">第 {{ .PageNumber }} 页 / 共 {{ .TotalPages }} 页</span>
+    {{ if .HasNext }}
+      <a href="{{ .Next.URL }}" class="pagination-next">下一页 →</a>
+    {{ end }}
+  </nav>
+{{ end }}

@@ -1,0 +1,46 @@
+{{ define "main" }}
+  {{ partial "guide-faq-schema.html" . }}
+  {{ partial "guide-hero.html" . }}
+
+  <!-- 新手入门 -->
+  <section id="quick-start" class="guide-section guide-section-quick">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2>📖 新手入门</h2>
+        <p class="section-desc">如果你是新手，建议按顺序阅读以下内容</p>
+      </div>
+      <div class="guide-content">
+        {{ .Params.guide_content | markdownify  }}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="guide-section guide-section-faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2>❓ 常见问题</h2>
+        <p class="section-desc">快速找到你在建站过程中遇到的各种疑问</p>
+      </div>
+      <div class="guide-content faq-grid-wrapper">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="guide-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>准备好了吗？</h2>
+        <p>以上所有知识我们已经帮你实践了无数遍。告诉我们你的需求，我们帮你实现。</p>
+        <div class="cta-actions">
+          <a href="/services/" class="btn-primary">查看服务</a>
+          <a href="/contact/" class="btn-secondary">立即咨询</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

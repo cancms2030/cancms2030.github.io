@@ -1,4 +1,29 @@
 {{ define "main" }}
+  {{ $stars := .Params.stars | default 0 }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "{{ .Title }}",
+    "description": "{{ .Description }}",
+    "applicationCategory": "WebApplication",
+    "operatingSystem": "All",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Params.author | default "Hugo Community" }}"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "interactionStatistic": {
+      "@type": "InteractionCounter",
+      "interactionType": "https://schema.org/LikeAction",
+      "userInteractionCount": {{ $stars }}
+    }
+  }
+  </script>
   <article class="theme-detail">
     <h1>{{ .Title }}</h1>
     <img src="{{ .Params.screenshot }}" alt="{{ .Title }}" loading="lazy">

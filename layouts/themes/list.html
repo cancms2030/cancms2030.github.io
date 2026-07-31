@@ -1,19 +1,74 @@
 {{ define "main" }}
-  <h1>Hugo 免费主题资源库</h1>
-  <p>收录 50 款优质免费 Hugo 主题，按场景分类，方便选择</p>
-
-  <!-- 分类筛选导航 -->
-  <nav class="theme-filters">
-    <a href="#all" class="active">全部</a>
-    {{ range $taxonomy := .Site.Taxonomies.categories }}
-      <a href="#{{ .Page.Title | urlize }}">{{ .Page.Title }}</a>
-    {{ end }}
-  </nav>
-
-  <!-- 主题列表 -->
-  <div class="themes-grid">
-    {{ range .Pages.ByParam "stars" }}
-      {{ .Render "summary" }}
-    {{ end }}
+  <!-- Hero 大图区域 -->
+  <div class="themes-hero" >
+    <div class="themes-hero-content" style="max-width: 800px; margin: 0 auto;">
+      <h1 style=" margin-bottom: 0.5rem;">🎨 Hugo 免费主题资源库</h1>
+      <p style="  opacity: 0.9; max-width: 700px; margin: 3rem auto;">收录 {{ len .Site.RegularPages }} 款优质免费 Hugo 主题，按场景分类，方便选择</p>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+        <span style="display: inline-block; background: rgba(255,255,255,0.15); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 1.4rem;">📦 {{ len .Site.RegularPages }} 款主题</span>
+        <span style="display: inline-block; background: rgba(255,255,255,0.15); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 1.4rem;">🏷️ {{ len .Site.Taxonomies.categories }} 个分类</span>
+        <span style="display: inline-block; background: rgba(255,255,255,0.15); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 1.4rem;">⭐ 按 GitHub Star 排序</span>
+      </div>
+    </div>
   </div>
+
+  <div class="container">
+      <!-- 分类筛选导航 -->
+      <nav class="theme-filters">
+        <a href="#all" class="active" data-category="all">全部</a>
+        {{ range $taxonomy := .Site.Taxonomies.categories }}
+          <a href="#{{ .Page.Title | urlize }}" data-category="{{ .Page.Title }}">{{ .Page.Title }}</a>
+        {{ end }}
+      </nav>
+
+      <!-- 主题列表（分页） -->
+      {{ $sortedPages := sort .Pages "Params.stars" "desc" }}
+      {{ $paginator := .Paginate $sortedPages 12 }}
+      <div class="themes-grid">
+        {{ range $paginator.Pages }}
+          {{ .Render "summary" }}
+        {{ end }}
+      </div>
+
+      <!-- 分页导航 -->
+      {{ if gt $paginator.TotalPages 1 }}
+        <nav class="pagination">
+          {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="pagination-prev">← 上一页</a>
+          {{ end }}
+          <span class="pagination-info">第 {{ $paginator.PageNumber }} 页 / 共 {{ $paginator.TotalPages }} 页</span>
+          {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="pagination-next">下一页 →</a>
+          {{ end }}
+        </nav>
+      {{ end }}
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filters = document.querySelectorAll('.theme-filters a');
+      const cards = document.querySelectorAll('.theme-card');
+
+      filters.forEach(filter => {
+        filter.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          // 更新激活状态
+          filters.forEach(f => f.classList.remove('active'));
+          this.classList.add('active');
+
+          const category = this.dataset.category;
+
+          // 筛选卡片
+          cards.forEach(card => {
+            const cardCategories = card.dataset.categories ? card.dataset.categories.split(',') : [];
+            if (category === 'all' || cardCategories.includes(category)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 {{ end }}

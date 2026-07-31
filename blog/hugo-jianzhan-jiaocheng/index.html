@@ -1,0 +1,142 @@
+<!doctype html><html lang=zh><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Hugo 建站教程：从零开始搭建静态网站 - cancms - 专业静态网站建站服务</title><meta name=description content="从零开始学习Hugo建站，手把手教你安装Hugo、创建网站、选择主题、编写内容、部署上线，快速搭建高性能静态网站。"><meta name=keywords content="Hugo建站,Hugo教程,静态网站生成器,Hugo入门,Hugo静态网站"><meta name=author content="CANCMS"><link rel=canonical href=https://cancms2030.github.io/blog/hugo-jianzhan-jiaocheng/><meta property="og:title" content="Hugo 建站教程：从零开始搭建静态网站"><meta property="og:description" content="从零开始学习Hugo建站，手把手教你安装Hugo、创建网站、选择主题、编写内容、部署上线，快速搭建高性能静态网站。"><meta property="og:url" content="https://cancms2030.github.io/blog/hugo-jianzhan-jiaocheng/"><meta property="og:type" content="article"><meta property="og:site_name" content="cancms - 专业静态网站建站服务"><meta property="og:image" content="https://cancms2030.github.io/images/logo.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Hugo 建站教程：从零开始搭建静态网站"><meta name=twitter:description content="从零开始学习Hugo建站，手把手教你安装Hugo、创建网站、选择主题、编写内容、部署上线，快速搭建高性能静态网站。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Hugo 建站教程：从零开始搭建静态网站","description":"从零开始学习Hugo建站，手把手教你安装Hugo、创建网站、选择主题、编写内容、部署上线，快速搭建高性能静态网站。","datePublished":"2026-07-31T00:00:00Z","dateModified":"2026-07-31T00:00:00Z","author":{"@type":"Person","name":"CANCMS"},"publisher":{"@type":"Organization","name":"CANCMS"},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cancms2030.github.io\/blog\/hugo-jianzhan-jiaocheng\/"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-R68BVLKF44"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-R68BVLKF44")</script><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/vendor/fontawesome.min.css><link rel=stylesheet href=/css/vendor/swiper-bundle.min.css><script src=/js/vendor/fontawesome.min.js defer></script><script src=/js/vendor/swiper-bundle.min.js defer></script><script src=/js/main.js defer></script></head><body><nav class=navbar><div class=container><a href=https://cancms2030.github.io/ class=logo><img src=/images/logo/logo.png alt="cancms - 专业静态网站建站服务" class=logo-img></a><div class=hamburger id=hamburger-menu><span></span>
+<span></span>
+<span></span></div><ul class=nav-links id=nav-links><li><a href=/>首页</a></li><li><a href=/about/>关于我们</a></li><li><a href=/services/>我们的服务</a></li><li><a href=/portfolio/>案例展示</a></li><li><a href=/blog/>博客</a></li><li><a href=/contact/ class="nav-cta-button white-text">联系我们</a></li></ul></div></nav><script>document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("hamburger-menu"),t=document.getElementById("nav-links"),n=document.querySelectorAll(".dropdown");e.addEventListener("click",function(){e.classList.toggle("active"),t.classList.toggle("active")}),n.forEach(e=>{e.addEventListener("click",function(e){window.innerWidth<=768&&(e.preventDefault(),this.classList.toggle("active"))})}),document.addEventListener("click",function(n){!e.contains(n.target)&&!t.contains(n.target)&&(e.classList.remove("active"),t.classList.remove("active"))}),window.addEventListener("resize",function(){window.innerWidth>768&&(e.classList.remove("active"),t.classList.remove("active"),n.forEach(e=>e.classList.remove("active")))})})</script><style>.hamburger{display:none;cursor:pointer;padding:10px}.hamburger span{display:block;width:25px;height:3px;background-color:#333;margin:5px 0;transition:all .3s ease}.hamburger.active span:nth-child(1){transform:rotate(45deg)translate(5px,5px)}.hamburger.active span:nth-child(2){opacity:0}.hamburger.active span:nth-child(3){transform:rotate(-45deg)translate(7px,-6px)}@media screen and (max-width:768px){.hamburger{display:block}.nav-links{display:none;width:100%;position:absolute;top:70px;left:0;background-color:#fff;padding:20px;box-shadow:0 2px 5px rgba(0,0,0,.1)}.nav-links.active{display:block}.nav-links li{display:block;margin:10px 0}.dropdown-menu{position:static;display:none;box-shadow:none;padding-left:20px}.dropdown.active .dropdown-menu{display:block}}</style><section class=page-header><div class=container><h1>Hugo 建站教程：从零开始搭建静态网站</h1><p>从零开始学习Hugo建站，手把手教你安装Hugo、创建网站、选择主题、编写内容、部署上线，快速搭建高性能静态网站。</p></div></section><section class=content-section><div class=container><div class="row justify-center"><article class=lg:col-10><h1 class="h2 mb-4">Hugo 建站教程：从零开始搭建静态网站</h1><div class="content mb-10"><h1 id=hugo-建站教程从零开始搭建静态网站>Hugo 建站教程：从零开始搭建静态网站</h1><p>Hugo 是目前最快的静态网站生成器之一，使用 Go 语言开发，能够在毫秒级内生成完整的静态网站。无论是个人博客、企业官网还是文档站点，Hugo 都能完美胜任。</p><p>本教程将从零开始，带你一步步完成 Hugo 网站的搭建与部署。</p><h2 id=一什么是-hugo>一、什么是 Hugo？</h2><p>Hugo 是一个静态网站生成器（Static Site Generator，SSG），它将 Markdown 格式的内容文件转换为完整的 HTML 网站。</p><p><strong>Hugo 的核心优势：</strong></p><ul><li><strong>极快的构建速度</strong>：秒级生成数千个页面</li><li><strong>无需数据库</strong>：所有内容都是静态文件</li><li><strong>内置开发服务器</strong>：实时预览内容修改</li><li><strong>丰富的主题生态</strong>：数百个免费主题可选</li><li><strong>强大的内容组织</strong>：支持分类、标签、自定义内容类型</li></ul><h2 id=二安装-hugo>二、安装 Hugo</h2><h3 id=windows-系统>Windows 系统</h3><p>使用 Chocolatey 安装：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>choco install hugo-extended
+</span></span></code></pre></div><p>使用 Scoop 安装：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>scoop install hugo-extended
+</span></span></code></pre></div><p>或从 <a href=https://github.com/gohugoio/hugo/releases>Hugo Releases</a> 下载预编译二进制文件。</p><h3 id=macos-系统>macOS 系统</h3><p>使用 Homebrew 安装：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>brew install hugo
+</span></span></code></pre></div><h3 id=linux-系统>Linux 系统</h3><p>使用包管理器安装：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># Ubuntu/Debian</span>
+</span></span><span style=display:flex><span>sudo apt install hugo
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Fedora</span>
+</span></span><span style=display:flex><span>sudo dnf install hugo
+</span></span></code></pre></div><h3 id=验证安装>验证安装</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>hugo version
+</span></span></code></pre></div><h2 id=三创建新网站>三、创建新网站</h2><p>使用 <code>hugo new site</code> 命令创建新网站：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>hugo new site my-website
+</span></span><span style=display:flex><span>cd my-website
+</span></span></code></pre></div><p>创建后的目录结构：</p><pre tabindex=0><code>my-website/
+├── archetypes/     # 内容模板
+├── content/        # Markdown 内容文件
+├── data/           # 数据文件
+├── layouts/        # HTML 模板
+├── static/         # 静态资源（图片、CSS、JS）
+├── themes/         # 主题
+└── config.toml     # 配置文件
+</code></pre><h2 id=四安装主题>四、安装主题</h2><p>Hugo 有丰富的主题生态，可以从 <a href=https://themes.gohugo.io/>Hugo Themes</a> 选择喜欢的主题。</p><h3 id=方式一git-子模块安装>方式一：Git 子模块安装</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>git init
+</span></span><span style=display:flex><span>git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span></code></pre></div><h3 id=方式二直接下载>方式二：直接下载</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>cd themes
+</span></span><span style=display:flex><span>git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git ananke
+</span></span></code></pre></div><h3 id=配置主题>配置主题</h3><p>在 <code>config.toml</code> 中设置主题：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-toml data-lang=toml><span style=display:flex><span><span style=color:#a6e22e>theme</span> = <span style=color:#e6db74>&#34;ananke&#34;</span>
+</span></span></code></pre></div><h2 id=五创建内容>五、创建内容</h2><h3 id=创建首页>创建首页</h3><p>修改 <code>content/_index.md</code>：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>---
+</span></span><span style=display:flex><span><span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;我的 Hugo 网站&#34;</span>
+</span></span><span style=display:flex><span>---
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 欢迎来到我的 Hugo 网站</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>这是使用 Hugo 构建的静态网站。</span>
+</span></span></code></pre></div><h3 id=创建博客文章>创建博客文章</h3><p>使用 <code>hugo new</code> 命令创建文章：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>hugo new posts/我的第一篇文章.md
+</span></span></code></pre></div><p>文章 Front Matter 示例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span>---
+</span></span><span style=display:flex><span><span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;我的第一篇文章&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>date</span>: <span style=color:#e6db74>2026-07-31T10:00:00Z</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>draft</span>: <span style=color:#66d9ef>false</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>tags</span>: [<span style=color:#e6db74>&#34;Hugo&#34;</span>, <span style=color:#e6db74>&#34;教程&#34;</span>]
+</span></span><span style=display:flex><span><span style=color:#f92672>categories</span>: [<span style=color:#e6db74>&#34;建站知识&#34;</span>]
+</span></span><span style=display:flex><span>---
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 我的第一篇文章</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>这是使用 Hugo 创建的第一篇文章。</span>
+</span></span></code></pre></div><h2 id=六本地预览>六、本地预览</h2><p>启动 Hugo 开发服务器：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>hugo server
+</span></span></code></pre></div><p>访问 <code>http://localhost:1313</code> 即可预览网站。</p><p>启用草稿文章预览：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>hugo server -D
+</span></span></code></pre></div><h2 id=七配置网站>七、配置网站</h2><h3 id=基础配置configtoml>基础配置（config.toml）</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-toml data-lang=toml><span style=display:flex><span><span style=color:#a6e22e>baseURL</span> = <span style=color:#e6db74>&#34;https://www.example.com&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>title</span> = <span style=color:#e6db74>&#34;我的 Hugo 网站&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>languageCode</span> = <span style=color:#e6db74>&#34;zh-cn&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 永久链接配置</span>
+</span></span><span style=display:flex><span>[<span style=color:#a6e22e>permalinks</span>]
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>posts</span> = <span style=color:#e6db74>&#34;/blog/:slug/&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 站点地图</span>
+</span></span><span style=display:flex><span>[<span style=color:#a6e22e>sitemap</span>]
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>changefreq</span> = <span style=color:#e6db74>&#34;weekly&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>priority</span> = <span style=color:#ae81ff>0.5</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 启用 robots.txt</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>enableRobotsTXT</span> = <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 自动生成 lastmod</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>enableGitInfo</span> = <span style=color:#66d9ef>true</span>
+</span></span></code></pre></div><h3 id=菜单配置>菜单配置</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-toml data-lang=toml><span style=display:flex><span>[<span style=color:#a6e22e>menus</span>]
+</span></span><span style=display:flex><span>  [[<span style=color:#a6e22e>menus</span>.<span style=color:#a6e22e>main</span>]]
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;首页&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  [[<span style=color:#a6e22e>menus</span>.<span style=color:#a6e22e>main</span>]]
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;博客&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/blog/&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  [[<span style=color:#a6e22e>menus</span>.<span style=color:#a6e22e>main</span>]]
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;关于&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/about/&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>3</span>
+</span></span></code></pre></div><h2 id=八部署网站>八、部署网站</h2><h3 id=部署到-github-pages>部署到 GitHub Pages</h3><ol><li>在 GitHub 创建仓库 <code>username.github.io</code></li><li>构建网站：</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>hugo
+</span></span></code></pre></div><ol start=3><li>将 <code>public/</code> 目录推送到 GitHub：</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>cd public
+</span></span><span style=display:flex><span>git init
+</span></span><span style=display:flex><span>git remote add origin https://github.com/username/username.github.io.git
+</span></span><span style=display:flex><span>git add .
+</span></span><span style=display:flex><span>git commit -m <span style=color:#e6db74>&#34;Deploy Hugo site&#34;</span>
+</span></span><span style=display:flex><span>git push -u origin main
+</span></span></code></pre></div><h3 id=使用-github-actions-自动部署>使用 GitHub Actions 自动部署</h3><p>创建 <code>.github/workflows/hugo.yml</code>：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy Hugo Site</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>on</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>push</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>branches</span>: [ <span style=color:#ae81ff>main ]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>jobs</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>build</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-latest</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>steps</span>:
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v4</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-go@v4</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>go-version</span>: <span style=color:#e6db74>&#39;1.21&#39;</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-node@v4</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>node-version</span>: <span style=color:#e6db74>&#39;18&#39;</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm install -g postcss postcss-cli autoprefixer</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-hugo@v2</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>hugo-version</span>: <span style=color:#e6db74>&#39;latest&#39;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>extended</span>: <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>run</span>: <span style=color:#ae81ff>hugo</span>
+</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>github_token</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>publish_dir</span>: <span style=color:#ae81ff>./public</span>
+</span></span></code></pre></div><h3 id=部署到-netlifyvercel>部署到 Netlify/Vercel</h3><p>Netlify 和 Vercel 都提供 Hugo 的一键部署功能：</p><ol><li>将代码推送到 GitHub</li><li>在 Netlify/Vercel 中导入仓库</li><li>设置构建命令为 <code>hugo</code>，输出目录为 <code>public</code></li><li>点击部署</li></ol><h2 id=九进阶技巧>九、进阶技巧</h2><h3 id=自定义短代码>自定义短代码</h3><p>创建 <code>layouts/shortcodes/note.html</code>：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>blockquote</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;note&#34;</span>&gt;
+</span></span><span style=display:flex><span>  {{ .Inner }}
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>blockquote</span>&gt;
+</span></span></code></pre></div><p>在文章中使用：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-markdown data-lang=markdown><span style=display:flex><span><blockquote class=note>
+  
+这是一条重要提示。
+
+</blockquote>
+
+</span></span></code></pre></div><h3 id=自定义模板>自定义模板</h3><p>创建 <code>layouts/_default/single.html</code>：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-html data-lang=html><span style=display:flex><span>{{ define &#34;main&#34; }}
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>article</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>h1</span>&gt;{{ .Title }}&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>time</span>&gt;{{ .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;content&#34;</span>&gt;
+</span></span><span style=display:flex><span>    {{ .Content }}
+</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>div</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>article</span>&gt;
+</span></span><span style=display:flex><span>{{ end }}
+</span></span></code></pre></div><h3 id=图片优化>图片优化</h3><p>创建 <code>layouts/_default/_markup/render-image.html</code>：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-html data-lang=html><span style=display:flex><span>{{- $image := .Page.Resources.GetMatch (printf &#34;%s&#34; (.Destination | safeURL)) -}}
+</span></span><span style=display:flex><span>{{- if $image -}}
+</span></span><span style=display:flex><span>  {{- $webp := $image.Resize &#34;800x webp q75&#34; -}}
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ $webp.RelPermalink }}&#34;</span> <span style=color:#a6e22e>alt</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Text }}&#34;</span> <span style=color:#a6e22e>loading</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;lazy&#34;</span>&gt;
+</span></span><span style=display:flex><span>{{- else -}}
+</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Destination | safeURL }}&#34;</span> <span style=color:#a6e22e>alt</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Text }}&#34;</span> <span style=color:#a6e22e>loading</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;lazy&#34;</span>&gt;
+</span></span><span style=display:flex><span>{{- end -}}
+</span></span></code></pre></div><h2 id=十常见问题>十、常见问题</h2><h3 id=1-hugo-无法加载主题>1. Hugo 无法加载主题</h3><p>确保 <code>config.toml</code> 中的 <code>theme</code> 名称与 <code>themes/</code> 目录中的文件夹名称一致。</p><h3 id=2-文章不显示>2. 文章不显示</h3><p>检查文章 <code>draft</code> 字段是否为 <code>false</code>，或使用 <code>hugo server -D</code> 预览草稿。</p><h3 id=3-中文乱码>3. 中文乱码</h3><p>确保文件编码为 UTF-8，在 <code>config.toml</code> 中设置 <code>languageCode = "zh-cn"</code>。</p><h2 id=结语>结语</h2><p>通过本教程，你应该已经掌握了 Hugo 建站的基础流程。Hugo 的强大功能远不止于此，随着使用深入，你会发现更多高级特性。</p><p>静态网站的未来已来，Hugo 正是开启这段旅程的最佳工具。</p><hr><p><em>需要专业的 Hugo 建站服务？cancms 提供一站式静态网站解决方案，欢迎 <a href=/contact/>联系我们</a> 了解更多。</em></p></div></article></div></div></section><footer class=footer><div class=container><div class=footer-content><div class=footer-section><h3>关于 cancms - 专业静态网站建站服务</h3><p>cancms提供专业静态网站建站服务，基于Hugo生成器，速度快、成本低、安全可靠。为企业、个人、学术机构提供一站式静态网站解决方案。</p></div><div class=footer-section><h3>快速链接</h3><ul><li><a href=/>首页</a></li><li><a href=/about/>关于我们</a></li><li><a href=/services/>我们的服务</a></li><li><a href=/portfolio/>案例展示</a></li><li><a href=/blog/>博客</a></li></ul></div><div class=footer-section><h3>联系方式</h3><ul><li><i class="fas fa-shopping-cart"></i> 淘宝店：<a href="https://item.taobao.com/item.htm?id=767084316219" class=text-link>https://item.taobao.com/item.htm?id=767084316219</a></li><li><i class="fa-solid fa-comment-dots"></i> 微信：<span class=text-link></span>ncp2025</span></li><li><i class="fas fa-envelope"></i> 邮箱：<a href=mailto:cancms@163.com class=text-link>cancms@163.com</a></li></ul></div></div><div class=footer-bottom><p></p></div></div></footer></body></html>

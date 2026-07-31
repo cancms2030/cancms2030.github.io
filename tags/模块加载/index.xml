@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>模块加载 on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD/</link><description>Recent content in 模块加载 on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo module 使用github上面的模块时，本地启动卡住 failed to download ...</title><link>https://cancms2030.github.io/blog/hugo-mokuaijiazai-wenti/</link><pubDate>Sun, 08 Jun 2025 05:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/hugo-mokuaijiazai-wenti/</guid><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;hugo.toml 配置文件加上代理配置：&lt;/p&gt;
+&lt;p&gt;proxy = &amp;lsquo;&lt;a href="https://goproxy.cn/'"&gt;https://goproxy.cn/'&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;=====&lt;/p&gt;
+&lt;p&gt;proxy:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://goproxy.cn/
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

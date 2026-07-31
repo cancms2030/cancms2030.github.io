@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GitHub Pages on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/github-pages/</link><description>Recent content in GitHub Pages on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml"/><item><title>静态网站部署完整指南：从零到上线全流程</title><link>https://cancms2030.github.io/blog/jingtai-wangzhan-bushu/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/jingtai-wangzhan-bushu/</guid><description>&lt;h1 id="静态网站部署完整指南从零到上线全流程"&gt;静态网站部署完整指南：从零到上线全流程&lt;/h1&gt;
+&lt;p&gt;将静态网站从本地代码部署到线上环境，看似简单，但要做到自动化、高可用、高性能，却有不少细节需要注意。本文将带你走完静态网站部署的完整流程。&lt;/p&gt;
+&lt;h2 id="一部署前的准备"&gt;一、部署前的准备&lt;/h2&gt;
+&lt;h3 id="11-代码版本管理"&gt;1.1 代码版本管理&lt;/h3&gt;
+&lt;p&gt;推荐使用 Git 进行版本管理，并将代码托管到 GitHub 或 GitLab。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &lt;span style="color:#e6db74"&gt;&amp;#34;initial commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git remote add origin https://github.com/yourname/your-repo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="12-静态网站生成器选择"&gt;1.2 静态网站生成器选择&lt;/h3&gt;
+&lt;p&gt;常见的静态网站生成器包括 Hugo、Jekyll、Hexo、VuePress 等。本指南以 Hugo 为例。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo 安装&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Windows (使用 Chocolatey)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;choco install hugo-extended
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Linux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="二构建静态网站"&gt;二、构建静态网站&lt;/h2&gt;
+&lt;h3 id="21-本地构建命令"&gt;2.1 本地构建命令&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 开发环境预览&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 生产环境构建&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo --minify --environment production
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;构建完成后，所有静态文件会生成在 &lt;code&gt;public/&lt;/code&gt; 目录中。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on cancms - 专业静态网站建站服务</title><link>https://cancms2030.github.io/tags/hugo/</link><description>Recent content in Hugo on cancms - 专业静态网站建站服务</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 31 Jul 2026 08:15:29 +0800</lastBuildDate><atom:link href="https://cancms2030.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 建站教程：从零开始搭建静态网站</title><link>https://cancms2030.github.io/blog/hugo-jianzhan-jiaocheng/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/hugo-jianzhan-jiaocheng/</guid><description>&lt;h1 id="hugo-建站教程从零开始搭建静态网站"&gt;Hugo 建站教程：从零开始搭建静态网站&lt;/h1&gt;
+&lt;p&gt;Hugo 是目前最快的静态网站生成器之一，使用 Go 语言开发，能够在毫秒级内生成完整的静态网站。无论是个人博客、企业官网还是文档站点，Hugo 都能完美胜任。&lt;/p&gt;
+&lt;p&gt;本教程将从零开始，带你一步步完成 Hugo 网站的搭建与部署。&lt;/p&gt;
+&lt;h2 id="一什么是-hugo"&gt;一、什么是 Hugo？&lt;/h2&gt;
+&lt;p&gt;Hugo 是一个静态网站生成器（Static Site Generator，SSG），它将 Markdown 格式的内容文件转换为完整的 HTML 网站。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo 的核心优势：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;极快的构建速度&lt;/strong&gt;：秒级生成数千个页面&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;无需数据库&lt;/strong&gt;：所有内容都是静态文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内置开发服务器&lt;/strong&gt;：实时预览内容修改&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;丰富的主题生态&lt;/strong&gt;：数百个免费主题可选&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强大的内容组织&lt;/strong&gt;：支持分类、标签、自定义内容类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二安装-hugo"&gt;二、安装 Hugo&lt;/h2&gt;
+&lt;h3 id="windows-系统"&gt;Windows 系统&lt;/h3&gt;
+&lt;p&gt;使用 Chocolatey 安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;choco install hugo-extended
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用 Scoop 安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;scoop install hugo-extended
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或从 &lt;a href="https://github.com/gohugoio/hugo/releases"&gt;Hugo Releases&lt;/a&gt; 下载预编译二进制文件。&lt;/p&gt;
+&lt;h3 id="macos-系统"&gt;macOS 系统&lt;/h3&gt;
+&lt;p&gt;使用 Homebrew 安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="linux-系统"&gt;Linux 系统&lt;/h3&gt;
+&lt;p&gt;使用包管理器安装：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Ubuntu/Debian&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Fedora&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="验证安装"&gt;验证安装&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="三创建新网站"&gt;三、创建新网站&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;hugo new site&lt;/code&gt; 命令创建新网站：&lt;/p&gt;</description></item><item><title>静态网站部署完整指南：从零到上线全流程</title><link>https://cancms2030.github.io/blog/jingtai-wangzhan-bushu/</link><pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/jingtai-wangzhan-bushu/</guid><description>&lt;h1 id="静态网站部署完整指南从零到上线全流程"&gt;静态网站部署完整指南：从零到上线全流程&lt;/h1&gt;
+&lt;p&gt;将静态网站从本地代码部署到线上环境，看似简单，但要做到自动化、高可用、高性能，却有不少细节需要注意。本文将带你走完静态网站部署的完整流程。&lt;/p&gt;
+&lt;h2 id="一部署前的准备"&gt;一、部署前的准备&lt;/h2&gt;
+&lt;h3 id="11-代码版本管理"&gt;1.1 代码版本管理&lt;/h3&gt;
+&lt;p&gt;推荐使用 Git 进行版本管理，并将代码托管到 GitHub 或 GitLab。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &lt;span style="color:#e6db74"&gt;&amp;#34;initial commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git remote add origin https://github.com/yourname/your-repo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="12-静态网站生成器选择"&gt;1.2 静态网站生成器选择&lt;/h3&gt;
+&lt;p&gt;常见的静态网站生成器包括 Hugo、Jekyll、Hexo、VuePress 等。本指南以 Hugo 为例。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo 安装&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Windows (使用 Chocolatey)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;choco install hugo-extended
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# macOS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Linux&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="二构建静态网站"&gt;二、构建静态网站&lt;/h2&gt;
+&lt;h3 id="21-本地构建命令"&gt;2.1 本地构建命令&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 开发环境预览&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 生产环境构建&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo --minify --environment production
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;构建完成后，所有静态文件会生成在 &lt;code&gt;public/&lt;/code&gt; 目录中。&lt;/p&gt;</description></item><item><title>Hugo module 使用github上面的模块时，本地启动卡住 failed to download ...</title><link>https://cancms2030.github.io/blog/hugo-mokuaijiazai-wenti/</link><pubDate>Sun, 08 Jun 2025 05:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/hugo-mokuaijiazai-wenti/</guid><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;hugo.toml 配置文件加上代理配置：&lt;/p&gt;
+&lt;p&gt;proxy = &amp;lsquo;&lt;a href="https://goproxy.cn/'"&gt;https://goproxy.cn/'&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;=====&lt;/p&gt;
+&lt;p&gt;proxy:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://goproxy.cn/
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>用hugo blox academic cv主题时注意指定的 hugo 版本 0.136.5， 用最新的版本如147可能编不过</title><link>https://cancms2030.github.io/blog/hugo-banben/</link><pubDate>Sun, 08 Jun 2025 05:00:00 +0000</pubDate><guid>https://cancms2030.github.io/blog/hugo-banben/</guid><description>&lt;h2 id="hugo-blox-学术cv-主题免费"&gt;Hugo Blox 学术CV 主题（免费）：&lt;/h2&gt;
+&lt;p&gt;github 代码：&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/HugoBlox/theme-academic-cv"&gt;https://github.com/HugoBlox/theme-academic-cv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网站demo:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://academic-demo.netlify.app/"&gt;https://academic-demo.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在本地的调试环境如果Hugo的版本太新（0.147），也可能一大堆报错。&lt;/p&gt;
+&lt;p&gt;在github action的编译中，不明确指定hugo版本，可能报错。&lt;/p&gt;</description></item></channel></rss>

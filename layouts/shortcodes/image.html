@@ -1,0 +1,10 @@
+<!-- get value from params -->
+
+{{ $class:= .Get "class" }}
+{{ $src:= .Get "src" }}
+{{ $style:= .Get "style" }}
+
+
+<div class="short-code-image {{$class}} " >
+  <img  src="{{ relURL $src }}"  style="{{ $style | safeCSS }}" />
+</div>
